@@ -13,6 +13,7 @@
 		124D9478272B2B6F00DC2203 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9477272B2B6F00DC2203 /* Endpoint.swift */; };
 		124D947A272B2C9100DC2203 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9479272B2C9100DC2203 /* NetworkServiceError.swift */; };
 		124D947C272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947B272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift */; };
+		124D947E272B2DD300DC2203 /* LaunchesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947D272B2DD200DC2203 /* LaunchesNetworkService.swift */; };
 		128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */; };
 		128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */; };
 		128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */; };
@@ -49,6 +50,7 @@
 		124D9477272B2B6F00DC2203 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		124D9479272B2C9100DC2203 /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		124D947B272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		124D947D272B2DD200DC2203 /* LaunchesNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesNetworkService.swift; sourceTree = "<group>"; };
 		128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleRouter.swift; sourceTree = "<group>"; };
 		128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleProtocols.swift; sourceTree = "<group>"; };
 		128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModulePresenter.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		124D9476272B2B4200DC2203 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				124D947D272B2DD200DC2203 /* LaunchesNetworkService.swift */,
 				124D947B272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift */,
 				124D9479272B2C9100DC2203 /* NetworkServiceError.swift */,
 				124D9477272B2B6F00DC2203 /* Endpoint.swift */,
@@ -495,6 +498,7 @@
 				12F27296272ABEFB006CCA97 /* RocketsModuleProtocols.swift in Sources */,
 				128B123F272A919200C41A69 /* LaunchesModuleConfigurator.swift in Sources */,
 				12F272A4272AC1A9006CCA97 /* FavoritesModuleProtocols.swift in Sources */,
+				124D947E272B2DD300DC2203 /* LaunchesNetworkService.swift in Sources */,
 				12F272AC272AD871006CCA97 /* LaunchCell.swift in Sources */,
 				12B1FF0E272849B400D4FEB2 /* LaunchesViewController.swift in Sources */,
 				124D947C272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift in Sources */,

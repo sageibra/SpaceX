@@ -11,7 +11,7 @@ enum NetworkServiceError: Error, CustomStringConvertible {
     case serverError(Int)
     case networkError(Error)
     case decodingError(Error)
-    
+
     var description: String {
         switch self {
         case .nonHTTPResponse: return "Non-HTTP response received"

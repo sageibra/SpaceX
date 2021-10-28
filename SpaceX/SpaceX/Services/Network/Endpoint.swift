@@ -42,4 +42,3 @@ extension URL {
         self = url
     }
 }
-
