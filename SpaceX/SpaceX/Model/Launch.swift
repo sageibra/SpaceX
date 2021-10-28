@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Launch: Decodable  {
+struct Launch: Decodable {
     let missionName: String
     let launchDateLocal: Date
     let rocket: Rocket

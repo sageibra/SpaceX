@@ -8,7 +8,7 @@
 import UIKit
 
 enum Images {
-    
+
     static let launchesIcon = UIImage(systemName: "flame")
     static let rocketIcon = UIImage(named: "shuttle")
     static let favoriteIcon = UIImage(systemName: "heart.circle")
