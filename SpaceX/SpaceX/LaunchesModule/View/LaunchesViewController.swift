@@ -43,7 +43,10 @@ extension LaunchesViewController: UICollectionViewDataSource {
         return 15
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
         let cell = collectionView.dequeue(LaunchCell.self, indexPath: indexPath)
         return cell
     }
