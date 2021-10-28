@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124D93E5272B176200DC2203 /* RocketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D93E4272B176200DC2203 /* RocketCell.swift */; };
+		128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */; };
+		128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */; };
+		128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */; };
+		128B123F272A919200C41A69 /* LaunchesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123E272A919200C41A69 /* LaunchesModuleConfigurator.swift */; };
+		128B1241272A93BE00C41A69 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B1240272A93BE00C41A69 /* ModuleTransitionable.swift */; };
 		12B1FF0A272849B400D4FEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B1FF09272849B400D4FEB2 /* AppDelegate.swift */; };
-		12B1FF0E272849B400D4FEB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B1FF0D272849B400D4FEB2 /* ViewController.swift */; };
+		12B1FF0E272849B400D4FEB2 /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B1FF0D272849B400D4FEB2 /* LaunchesViewController.swift */; };
 		12B1FF13272849B700D4FEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B1FF12272849B700D4FEB2 /* Assets.xcassets */; };
 		12B1FF16272849B700D4FEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B1FF14272849B700D4FEB2 /* LaunchScreen.storyboard */; };
+		12F271FA272A9C85006CCA97 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F271F9272A9C85006CCA97 /* UITableView+Ext.swift */; };
+		12F271FC272A9C91006CCA97 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */; };
+		12F27290272ABB09006CCA97 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F2728F272ABB09006CCA97 /* Images.swift */; };
+		12F27292272ABE57006CCA97 /* RocketsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27291272ABE57006CCA97 /* RocketsModuleConfigurator.swift */; };
+		12F27294272ABEB9006CCA97 /* RocketsModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27293272ABEB9006CCA97 /* RocketsModuleRouter.swift */; };
+		12F27296272ABEFB006CCA97 /* RocketsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27295272ABEFB006CCA97 /* RocketsModuleProtocols.swift */; };
+		12F27298272ABF67006CCA97 /* RocketsModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27297272ABF67006CCA97 /* RocketsModulePresenter.swift */; };
+		12F2729A272ABFD4006CCA97 /* RocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27299272ABFD4006CCA97 /* RocketsViewController.swift */; };
+		12F272A2272AC19B006CCA97 /* FavoritesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A1272AC19B006CCA97 /* FavoritesModuleConfigurator.swift */; };
+		12F272A4272AC1A9006CCA97 /* FavoritesModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A3272AC1A9006CCA97 /* FavoritesModuleProtocols.swift */; };
+		12F272A6272AC1B9006CCA97 /* FavoritesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A5272AC1B9006CCA97 /* FavoritesModulePresenter.swift */; };
+		12F272A8272AC1C8006CCA97 /* FavoritesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A7272AC1C8006CCA97 /* FavoritesModuleRouter.swift */; };
+		12F272AA272AC1D5006CCA97 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A9272AC1D5006CCA97 /* FavoritesViewController.swift */; };
+		12F272AC272AD871006CCA97 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272AB272AD871006CCA97 /* LaunchCell.swift */; };
+		12F272AE272ADD28006CCA97 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272AD272ADD28006CCA97 /* UIView+Ext.swift */; };
+		12F272B0272AE03D006CCA97 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */; };
 		79992EC75ABF8C50BA37122B /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0683A4429557FF35204567 /* Pods_SpaceX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F0683A4429557FF35204567 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		124D93E4272B176200DC2203 /* RocketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketCell.swift; sourceTree = "<group>"; };
+		128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleRouter.swift; sourceTree = "<group>"; };
+		128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleProtocols.swift; sourceTree = "<group>"; };
+		128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModulePresenter.swift; sourceTree = "<group>"; };
+		128B123E272A919200C41A69 /* LaunchesModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleConfigurator.swift; sourceTree = "<group>"; };
+		128B1240272A93BE00C41A69 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
 		12B1FF06272849B400D4FEB2 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B1FF09272849B400D4FEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12B1FF0D272849B400D4FEB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12B1FF0D272849B400D4FEB2 /* LaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
 		12B1FF12272849B700D4FEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B1FF15272849B700D4FEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B1FF17272849B700D4FEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F271F9272A9C85006CCA97 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		12F2728F272ABB09006CCA97 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		12F27291272ABE57006CCA97 /* RocketsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModuleConfigurator.swift; sourceTree = "<group>"; };
+		12F27293272ABEB9006CCA97 /* RocketsModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModuleRouter.swift; sourceTree = "<group>"; };
+		12F27295272ABEFB006CCA97 /* RocketsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModuleProtocols.swift; sourceTree = "<group>"; };
+		12F27297272ABF67006CCA97 /* RocketsModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModulePresenter.swift; sourceTree = "<group>"; };
+		12F27299272ABFD4006CCA97 /* RocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewController.swift; sourceTree = "<group>"; };
+		12F272A1272AC19B006CCA97 /* FavoritesModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleConfigurator.swift; sourceTree = "<group>"; };
+		12F272A3272AC1A9006CCA97 /* FavoritesModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleProtocols.swift; sourceTree = "<group>"; };
+		12F272A5272AC1B9006CCA97 /* FavoritesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModulePresenter.swift; sourceTree = "<group>"; };
+		12F272A7272AC1C8006CCA97 /* FavoritesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleRouter.swift; sourceTree = "<group>"; };
+		12F272A9272AC1D5006CCA97 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		12F272AB272AD871006CCA97 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
+		12F272AD272ADD28006CCA97 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
 		49DBB4F66410E9887953F07D /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		8A4D450DCF09DC3A64D0927C /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +91,60 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		128B1232272A907A00C41A69 /* LaunchesModule */ = {
+			isa = PBXGroup;
+			children = (
+				128B1237272A90AF00C41A69 /* Presenter */,
+				128B1236272A90A600C41A69 /* View */,
+				128B1235272A909F00C41A69 /* Protocols */,
+				128B1234272A909900C41A69 /* Router */,
+				128B1233272A908900C41A69 /* Configurator */,
+			);
+			path = LaunchesModule;
+			sourceTree = "<group>";
+		};
+		128B1233272A908900C41A69 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				128B123E272A919200C41A69 /* LaunchesModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		128B1234272A909900C41A69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		128B1235272A909F00C41A69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */,
+				128B1240272A93BE00C41A69 /* ModuleTransitionable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		128B1236272A90A600C41A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12B1FF0D272849B400D4FEB2 /* LaunchesViewController.swift */,
+				12F272AB272AD871006CCA97 /* LaunchCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		128B1237272A90AF00C41A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		12B1FEFD272849B400D4FEB2 = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +166,12 @@
 		12B1FF08272849B400D4FEB2 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				12B1FF09272849B400D4FEB2 /* AppDelegate.swift */,
+				12F2729B272AC134006CCA97 /* FavoritesModule */,
+				12F27203272AB919006CCA97 /* Resources */,
+				12F271FD272AB70D006CCA97 /* RocketsModule */,
+				128B1232272A907A00C41A69 /* LaunchesModule */,
 				12B1FF1D27284C6200D4FEB2 /* Supporting files */,
-				12B1FF0D272849B400D4FEB2 /* ViewController.swift */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -77,12 +179,152 @@
 		12B1FF1D27284C6200D4FEB2 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				12B1FF09272849B400D4FEB2 /* AppDelegate.swift */,
 				12B1FF12272849B700D4FEB2 /* Assets.xcassets */,
 				12B1FF14272849B700D4FEB2 /* LaunchScreen.storyboard */,
 				12B1FF17272849B700D4FEB2 /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		12F271F8272A9C71006CCA97 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12F271F9272A9C85006CCA97 /* UITableView+Ext.swift */,
+				12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */,
+				12F272AD272ADD28006CCA97 /* UIView+Ext.swift */,
+				12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		12F271FD272AB70D006CCA97 /* RocketsModule */ = {
+			isa = PBXGroup;
+			children = (
+				12F27202272AB746006CCA97 /* Configurator */,
+				12F27201272AB738006CCA97 /* Router */,
+				12F27200272AB729006CCA97 /* Protocols */,
+				12F271FF272AB723006CCA97 /* Presenter */,
+				12F271FE272AB71B006CCA97 /* View */,
+			);
+			path = RocketsModule;
+			sourceTree = "<group>";
+		};
+		12F271FE272AB71B006CCA97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12F27299272ABFD4006CCA97 /* RocketsViewController.swift */,
+				124D93E4272B176200DC2203 /* RocketCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12F271FF272AB723006CCA97 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12F27297272ABF67006CCA97 /* RocketsModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		12F27200272AB729006CCA97 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				12F27295272ABEFB006CCA97 /* RocketsModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		12F27201272AB738006CCA97 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				12F27293272ABEB9006CCA97 /* RocketsModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		12F27202272AB746006CCA97 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				12F27291272ABE57006CCA97 /* RocketsModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		12F27203272AB919006CCA97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12F271F8272A9C71006CCA97 /* Extensions */,
+				12F2728E272ABA3E006CCA97 /* Strings */,
+				12F2728D272ABA36006CCA97 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		12F2728D272ABA36006CCA97 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				12F2728F272ABB09006CCA97 /* Images.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		12F2728E272ABA3E006CCA97 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		12F2729B272AC134006CCA97 /* FavoritesModule */ = {
+			isa = PBXGroup;
+			children = (
+				12F272A0272AC161006CCA97 /* Configurator */,
+				12F2729F272AC158006CCA97 /* Protocols */,
+				12F2729E272AC151006CCA97 /* Presenter */,
+				12F2729D272AC14A006CCA97 /* Router */,
+				12F2729C272AC143006CCA97 /* View */,
+			);
+			path = FavoritesModule;
+			sourceTree = "<group>";
+		};
+		12F2729C272AC143006CCA97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12F272A9272AC1D5006CCA97 /* FavoritesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12F2729D272AC14A006CCA97 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				12F272A7272AC1C8006CCA97 /* FavoritesModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		12F2729E272AC151006CCA97 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12F272A5272AC1B9006CCA97 /* FavoritesModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		12F2729F272AC158006CCA97 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				12F272A3272AC1A9006CCA97 /* FavoritesModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		12F272A0272AC161006CCA97 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				12F272A1272AC19B006CCA97 /* FavoritesModuleConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		E6D5040E9F000378EB78ADB6 /* Frameworks */ = {
@@ -207,8 +449,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B1FF0E272849B400D4FEB2 /* ViewController.swift in Sources */,
+				12F2729A272ABFD4006CCA97 /* RocketsViewController.swift in Sources */,
+				128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */,
+				12F27296272ABEFB006CCA97 /* RocketsModuleProtocols.swift in Sources */,
+				128B123F272A919200C41A69 /* LaunchesModuleConfigurator.swift in Sources */,
+				12F272A4272AC1A9006CCA97 /* FavoritesModuleProtocols.swift in Sources */,
+				12F272AC272AD871006CCA97 /* LaunchCell.swift in Sources */,
+				12B1FF0E272849B400D4FEB2 /* LaunchesViewController.swift in Sources */,
+				12F272B0272AE03D006CCA97 /* UIStackView+Ext.swift in Sources */,
+				12F27290272ABB09006CCA97 /* Images.swift in Sources */,
+				12F271FA272A9C85006CCA97 /* UITableView+Ext.swift in Sources */,
+				12F271FC272A9C91006CCA97 /* UICollectionView+Ext.swift in Sources */,
+				12F272A8272AC1C8006CCA97 /* FavoritesModuleRouter.swift in Sources */,
+				12F272A2272AC19B006CCA97 /* FavoritesModuleConfigurator.swift in Sources */,
+				12F272AE272ADD28006CCA97 /* UIView+Ext.swift in Sources */,
+				12F27298272ABF67006CCA97 /* RocketsModulePresenter.swift in Sources */,
+				12F27292272ABE57006CCA97 /* RocketsModuleConfigurator.swift in Sources */,
+				12F272A6272AC1B9006CCA97 /* FavoritesModulePresenter.swift in Sources */,
 				12B1FF0A272849B400D4FEB2 /* AppDelegate.swift in Sources */,
+				128B1241272A93BE00C41A69 /* ModuleTransitionable.swift in Sources */,
+				124D93E5272B176200DC2203 /* RocketCell.swift in Sources */,
+				128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */,
+				12F27294272ABEB9006CCA97 /* RocketsModuleRouter.swift in Sources */,
+				12F272AA272AC1D5006CCA97 /* FavoritesViewController.swift in Sources */,
+				128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
