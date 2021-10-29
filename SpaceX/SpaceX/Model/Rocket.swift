@@ -9,8 +9,6 @@ import Foundation
 
 // MARK: - Rocket
 struct Rocket: Decodable {
-    let active: Bool
-    let costPerLaunch: Int
     let successRatePct: Int
     let country: String
     let company: String
