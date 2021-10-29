@@ -20,7 +20,7 @@ final class FavoritesViewController: UIViewController, FavoritesViewInput, Modul
     }
 
     private func setupTableView() {
-        title = "Favorites"
+        tabBarController?.title = "Favorites"
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self)
