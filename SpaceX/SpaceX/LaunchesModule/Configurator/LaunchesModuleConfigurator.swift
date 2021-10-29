@@ -9,10 +9,10 @@ import UIKit
 
 enum LaunchesModuleConfigurator {
 
-    static func configureModule() -> LaunchesViewController {
+    static func configureModule(service: LaunchesNetworkServiceProtocol, endpoint: Endpoint) -> LaunchesViewController {
         let view = LaunchesViewController()
         view.tabBarItem = UITabBarItem(title: "Launches", image: Images.launchesIcon, tag: 1)
-        let presenter = LaunchesModulePresenter()
+        let presenter = LaunchesModulePresenter(service: service, endpoint: endpoint)
         let router = LaunchesModuleRouter()
 
         presenter.view = view

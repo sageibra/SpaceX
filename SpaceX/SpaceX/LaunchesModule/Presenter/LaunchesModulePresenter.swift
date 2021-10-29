@@ -11,16 +11,51 @@ final class LaunchesModulePresenter {
 
     weak var view: LaunchesViewInput?
     var router: LaunchesRouterInput?
+    var model: [Launch] = []
+    var service: LaunchesNetworkServiceProtocol
+    var endpoint: Endpoint
 
     // MARK: - Initialisation
-    init() {
-
+    init(service: LaunchesNetworkServiceProtocol, endpoint: Endpoint) {
+        self.service = service
+        self.endpoint = endpoint
     }
 }
 
 // MARK: - View Output
 extension LaunchesModulePresenter: LaunchesViewOutput {
-    func presentDetailView() {}
 
-    func viewLoaded() {}
+    func configure(cell: LaunchCellViewInput, forRow row: Int) {
+        let launch = model[row]
+        cell.configure(
+            mission: launch.missionName,
+            date: launch.launchDateUnix,
+            location: launch.launchSite.siteName,
+            rName: launch.rocket.rocketName,
+            launchResult: launch.launchSuccess ?? false
+        )
+    }
+
+    func viewLoaded() { loadLaunches() }
+    var numberOfRows: Int { model.count }
+
+    func loadLaunches() {
+        service.loadLaunches(endpoint) { [weak self] result in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let launches):
+                    self.model = launches
+                    self.view?.reload()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
+
+    func didSelect(at row: Int) {
+        let launch = model[row]
+        router?.presentDetailModule(with: launch)
+    }
 }

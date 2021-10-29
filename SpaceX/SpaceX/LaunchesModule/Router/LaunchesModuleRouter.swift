@@ -12,20 +12,8 @@ final class LaunchesModuleRouter: LaunchesRouterInput {
     weak var view: ModuleTransitionable?
 
     // MARK: - Router Input
-
-    func dismissDetailModule(animation: Bool) {
-        print("Router dismissDetailModule")
+    func presentDetailModule(with data: Launch) {
+        let detailsVC = LaunchDetailsModuleConfigurator.configureModule(data)
+        view?.pushModule(module: detailsVC, animation: true)
     }
-//    func showDateModule(with model: LaunchesModulePresenter.DateViewModel) {
-//        let dateVC = DateModuleConfigurator.configurateModule(with: model)
-//
-//        let navController = UINavigationController(rootViewController: dateVC)
-//
-//        view?.presentModule(module: navController, animation: true, completion: nil)
-//    }
-
-//    func dismissDetailModule(animation: Bool) {
-//        view?.dismissModule(animation: animation, completion: nil)
-//    }
-
 }

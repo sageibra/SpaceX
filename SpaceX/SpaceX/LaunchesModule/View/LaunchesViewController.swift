@@ -7,24 +7,25 @@
 
 import UIKit
 
-final class LaunchesViewController: UIViewController, LaunchesViewInput, ModuleTransitionable {
+final class LaunchesViewController: UIViewController, ModuleTransitionable {
 
     private var collectionView: UICollectionView!
-    var output: LaunchesViewOutput?
+    var output: LaunchesViewOutput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        output?.viewLoaded()
+        output.viewLoaded()
         setupCollectionView()
     }
 
     private func setupCollectionView() {
-        title = "Launches"
+        tabBarController?.title = "Launches"
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createFlowLayout())
         collectionView.backgroundColor = .systemBackground
         view.addSubview(collectionView)
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(LaunchCell.self)
     }
 
@@ -37,10 +38,17 @@ final class LaunchesViewController: UIViewController, LaunchesViewInput, ModuleT
     }
 }
 
+// MARK: - View Input
+extension LaunchesViewController: LaunchesViewInput {
+    func reload() {
+        collectionView.reloadData()
+    }
+}
+
 // MARK: - UICollectionViewDataSource
 extension LaunchesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        output.numberOfRows
     }
 
     func collectionView(
@@ -48,9 +56,15 @@ extension LaunchesViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         let cell = collectionView.dequeue(LaunchCell.self, indexPath: indexPath)
+        output.configure(cell: cell, forRow: indexPath.row)
         return cell
     }
 }
 
 // MARK: - UICollectionViewDelegate
-extension LaunchesViewController: UICollectionViewDelegate {}
+extension LaunchesViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        output.didSelect(at: indexPath.item)
+    }
+}
