@@ -14,6 +14,13 @@
 		124D947A272B2C9100DC2203 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9479272B2C9100DC2203 /* NetworkServiceError.swift */; };
 		124D947C272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947B272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift */; };
 		124D947E272B2DD300DC2203 /* LaunchesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947D272B2DD200DC2203 /* LaunchesNetworkService.swift */; };
+		124D9480272BD35900DC2203 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947F272BD35900DC2203 /* Int+Ext.swift */; };
+		124D9488272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9487272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift */; };
+		124D948C272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D948B272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift */; };
+		124D948E272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D948D272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift */; };
+		124D9494272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */; };
+		124D9496272BED2C00DC2203 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */; };
+		124D9498272BFF3E00DC2203 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9497272BFF3E00DC2203 /* ArticleViewController.swift */; };
 		128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */; };
 		128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */; };
 		128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */; };
@@ -51,6 +58,13 @@
 		124D9479272B2C9100DC2203 /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		124D947B272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesNetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		124D947D272B2DD200DC2203 /* LaunchesNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesNetworkService.swift; sourceTree = "<group>"; };
+		124D947F272BD35900DC2203 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		124D9487272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModulePresenter.swift; sourceTree = "<group>"; };
+		124D948B272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleRouter.swift; sourceTree = "<group>"; };
+		124D948D272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleProtocols.swift; sourceTree = "<group>"; };
+		124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleConfigurator.swift; sourceTree = "<group>"; };
+		124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsViewController.swift; path = SpaceX/LaunchDetailsModule/Configurator/LaunchDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
+		124D9497272BFF3E00DC2203 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleRouter.swift; sourceTree = "<group>"; };
 		128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleProtocols.swift; sourceTree = "<group>"; };
 		128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModulePresenter.swift; sourceTree = "<group>"; };
@@ -131,6 +145,58 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		124D9481272BEB6000DC2203 /* LaunchDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				124D9486272BEBB000DC2203 /* Protocols */,
+				124D9485272BEBA000DC2203 /* Router */,
+				124D9484272BEB9900DC2203 /* View */,
+				124D9483272BEB9000DC2203 /* Presenter */,
+				124D9482272BEB8400DC2203 /* Configurator */,
+			);
+			path = LaunchDetailsModule;
+			sourceTree = "<group>";
+		};
+		124D9482272BEB8400DC2203 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		124D9483272BEB9000DC2203 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				124D9487272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		124D9484272BEB9900DC2203 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		124D9485272BEBA000DC2203 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				124D948B272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		124D9486272BEBB000DC2203 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				124D948D272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		128B1232272A907A00C41A69 /* LaunchesModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,14 +272,16 @@
 		12B1FF08272849B400D4FEB2 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				12B1FF09272849B400D4FEB2 /* AppDelegate.swift */,
+				124D9481272BEB6000DC2203 /* LaunchDetailsModule */,
 				124D93EC272B2AAD00DC2203 /* Services */,
 				124D93E7272B28A700DC2203 /* Model */,
-				12B1FF09272849B400D4FEB2 /* AppDelegate.swift */,
 				12F2729B272AC134006CCA97 /* FavoritesModule */,
 				12F27203272AB919006CCA97 /* Resources */,
 				12F271FD272AB70D006CCA97 /* RocketsModule */,
 				128B1232272A907A00C41A69 /* LaunchesModule */,
 				12B1FF1D27284C6200D4FEB2 /* Supporting files */,
+				124D9497272BFF3E00DC2203 /* ArticleViewController.swift */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -235,6 +303,7 @@
 				12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */,
 				12F272AD272ADD28006CCA97 /* UIView+Ext.swift */,
 				12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */,
+				124D947F272BD35900DC2203 /* Int+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -491,8 +560,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124D948C272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift in Sources */,
 				12F2729A272ABFD4006CCA97 /* RocketsViewController.swift in Sources */,
 				124D9478272B2B6F00DC2203 /* Endpoint.swift in Sources */,
+				124D9480272BD35900DC2203 /* Int+Ext.swift in Sources */,
+				124D9494272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift in Sources */,
 				124D93EB272B297F00DC2203 /* Rocket.swift in Sources */,
 				128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */,
 				12F27296272ABEFB006CCA97 /* RocketsModuleProtocols.swift in Sources */,
@@ -513,11 +585,15 @@
 				12F27292272ABE57006CCA97 /* RocketsModuleConfigurator.swift in Sources */,
 				12F272A6272AC1B9006CCA97 /* FavoritesModulePresenter.swift in Sources */,
 				12B1FF0A272849B400D4FEB2 /* AppDelegate.swift in Sources */,
+				124D9498272BFF3E00DC2203 /* ArticleViewController.swift in Sources */,
 				124D93E9272B28CA00DC2203 /* Launch.swift in Sources */,
+				124D9488272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift in Sources */,
 				124D947A272B2C9100DC2203 /* NetworkServiceError.swift in Sources */,
+				124D9496272BED2C00DC2203 /* LaunchDetailsViewController.swift in Sources */,
 				128B1241272A93BE00C41A69 /* ModuleTransitionable.swift in Sources */,
 				124D93E5272B176200DC2203 /* RocketCell.swift in Sources */,
 				128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */,
+				124D948E272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift in Sources */,
 				12F27294272ABEB9006CCA97 /* RocketsModuleRouter.swift in Sources */,
 				12F272AA272AC1D5006CCA97 /* FavoritesViewController.swift in Sources */,
 				128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */,
