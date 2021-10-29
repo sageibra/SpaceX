@@ -11,7 +11,11 @@ class LaunchesNetworkService {
 
     private var session: URLSession!
     private let configuration = URLSessionConfiguration.default
-    private let decoder = JSONDecoder()
+    private var decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
 
     init() { session = URLSession(configuration: configuration) }
 
@@ -41,7 +45,7 @@ extension LaunchesNetworkService: LaunchesNetworkServiceProtocol {
         let handler: Handler = { rawData, response, error in
             do {
                 let data = try self.httpResponse(data: rawData, response: response)
-                let response = try self.decoder.decode(Launch.self, from: data)
+                let response = try self.decoder.decode([Launch].self, from: data)
                 completion(.success(response))
             } catch {
                 completion(.failure((error as? NetworkServiceError) ?? .decodingError(error)))
