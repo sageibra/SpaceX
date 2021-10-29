@@ -7,7 +7,9 @@
 
 import Foundation
 
-protocol RocketsViewInput: AnyObject {}
+protocol RocketsViewInput: AnyObject {
+    func reload()
+}
 
 protocol RocketsViewOutput: AnyObject {
     func viewLoaded()

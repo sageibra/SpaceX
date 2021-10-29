@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RocketsViewController: UIViewController, RocketsViewInput, ModuleTransitionable {
+final class RocketsViewController: UIViewController, ModuleTransitionable {
 
     private let tableView = UITableView()
     var output: RocketsViewOutput?
@@ -20,7 +20,7 @@ final class RocketsViewController: UIViewController, RocketsViewInput, ModuleTra
     }
 
     private func setupTableView() {
-        title = "Rockets"
+        tabBarController?.title = "Rockets"
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(RocketCell.self)
@@ -34,6 +34,13 @@ final class RocketsViewController: UIViewController, RocketsViewInput, ModuleTra
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+    }
+}
+
+// MARK: - View Input
+extension RocketsViewController: RocketsViewInput {
+    func reload() {
+        tableView.reloadData()
     }
 }
 
@@ -51,6 +58,4 @@ extension RocketsViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension RocketsViewController: UITableViewDelegate {
-
-}
+extension RocketsViewController: UITableViewDelegate {}
