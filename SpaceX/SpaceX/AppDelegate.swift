@@ -20,19 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let rootTabBarController = UITabBarController()
         rootTabBarController.viewControllers = createTabBarControllers()
-        window?.rootViewController = rootTabBarController
+        window?.rootViewController = UINavigationController(rootViewController: rootTabBarController)
         window?.makeKeyAndVisible()
         return true
     }
 
     private func createTabBarControllers() -> [UIViewController] {
+        let service = LaunchesNetworkService()
+        let endpoint = Endpoint.launches()
         var controllers: [UIViewController] = []
-        let launchesViewController = LaunchesModuleConfigurator.configureModule()
+        let launchesViewController = LaunchesModuleConfigurator.configureModule(service: service, endpoint: endpoint)
         let rocketsViewController = RocketsModuleConfigurator.configureModule()
         let favoritesViewController = FavoritesModuleConfigurator.configureModule()
-        controllers = [UINavigationController(rootViewController: launchesViewController),
-                       UINavigationController(rootViewController: rocketsViewController),
-                       UINavigationController(rootViewController: favoritesViewController)]
+        controllers = [launchesViewController, rocketsViewController, favoritesViewController]
         return controllers
     }
 }
