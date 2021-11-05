@@ -22,10 +22,10 @@ final class LaunchDetailsModulePresenter {
 // MARK: - View Output
 extension LaunchDetailsModulePresenter: LaunchDetailsViewOutput {
 
-    var title: String { return launchInfo.missionName }
+    var title: String { return launchInfo.name }
 
     func viewLoaded() {}
     func presentWebView() {
-        router?.presentWebView(url: launchInfo.links.articleLink ?? "www.apple.com")
+        router?.presentWebView(url: launchInfo.links.article ?? "www.spacex.com")
     }
 }
