@@ -20,7 +20,7 @@ protocol LaunchesViewOutput: AnyObject {
 }
 
 protocol LaunchCellViewInput: AnyObject {
-    func configure(mission: String, date: Int, location: String, rName: String, launchResult: Bool)
+    func configure(mission: String, date: String, location: String, rName: String, launchResult: Bool)
 }
 
 protocol LaunchesRouterInput: AnyObject {
