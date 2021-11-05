@@ -17,4 +17,8 @@ enum Images {
     static let success = UIImage(systemName: "checkmark.circle")
     static let calendar = UIImage(systemName: "calendar")
     static let location = UIImage(systemName: "location.square")
+
+    static let falcon1 = UIImage(named: "falcon1")!
+    static let falcon9 = UIImage(named: "falcon9")!
+    static let falconHeavy = UIImage(named: "falconHeavy")!
 }
