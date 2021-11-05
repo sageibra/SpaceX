@@ -21,6 +21,7 @@
 		124D9494272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */; };
 		124D9496272BED2C00DC2203 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */; };
 		124D9498272BFF3E00DC2203 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9497272BFF3E00DC2203 /* ArticleViewController.swift */; };
+		12739222273049D800899E1F /* Launchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12739221273049D700899E1F /* Launchpad.swift */; };
 		128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */; };
 		128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */; };
 		128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */; };
@@ -30,6 +31,7 @@
 		12B1FF0E272849B400D4FEB2 /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B1FF0D272849B400D4FEB2 /* LaunchesViewController.swift */; };
 		12B1FF13272849B700D4FEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B1FF12272849B700D4FEB2 /* Assets.xcassets */; };
 		12B1FF16272849B700D4FEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B1FF14272849B700D4FEB2 /* LaunchScreen.storyboard */; };
+		12CADF5B273505AB0060CAE0 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CADF5A273505AB0060CAE0 /* String+Ext.swift */; };
 		12F271FA272A9C85006CCA97 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F271F9272A9C85006CCA97 /* UITableView+Ext.swift */; };
 		12F271FC272A9C91006CCA97 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */; };
 		12F27290272ABB09006CCA97 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F2728F272ABB09006CCA97 /* Images.swift */; };
@@ -65,6 +67,7 @@
 		124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleConfigurator.swift; sourceTree = "<group>"; };
 		124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsViewController.swift; path = SpaceX/LaunchDetailsModule/Configurator/LaunchDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 		124D9497272BFF3E00DC2203 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		12739221273049D700899E1F /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
 		128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleRouter.swift; sourceTree = "<group>"; };
 		128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleProtocols.swift; sourceTree = "<group>"; };
 		128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModulePresenter.swift; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		12B1FF12272849B700D4FEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B1FF15272849B700D4FEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B1FF17272849B700D4FEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CADF5A273505AB0060CAE0 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		12F271F9272A9C85006CCA97 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		12F2728F272ABB09006CCA97 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			children = (
 				124D93E8272B28CA00DC2203 /* Launch.swift */,
 				124D93EA272B297F00DC2203 /* Rocket.swift */,
+				12739221273049D700899E1F /* Launchpad.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,7 +294,6 @@
 		12B1FF1D27284C6200D4FEB2 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				12B1FF12272849B700D4FEB2 /* Assets.xcassets */,
 				12B1FF14272849B700D4FEB2 /* LaunchScreen.storyboard */,
 				12B1FF17272849B700D4FEB2 /* Info.plist */,
 			);
@@ -304,6 +308,7 @@
 				12F272AD272ADD28006CCA97 /* UIView+Ext.swift */,
 				12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */,
 				124D947F272BD35900DC2203 /* Int+Ext.swift */,
+				12CADF5A273505AB0060CAE0 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 		12F27203272AB919006CCA97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12B1FF12272849B700D4FEB2 /* Assets.xcassets */,
 				12F271F8272A9C71006CCA97 /* Extensions */,
 				12F2728E272ABA3E006CCA97 /* Strings */,
 				12F2728D272ABA36006CCA97 /* Images */,
@@ -563,6 +569,7 @@
 				124D948C272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift in Sources */,
 				12F2729A272ABFD4006CCA97 /* RocketsViewController.swift in Sources */,
 				124D9478272B2B6F00DC2203 /* Endpoint.swift in Sources */,
+				12CADF5B273505AB0060CAE0 /* String+Ext.swift in Sources */,
 				124D9480272BD35900DC2203 /* Int+Ext.swift in Sources */,
 				124D9494272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift in Sources */,
 				124D93EB272B297F00DC2203 /* Rocket.swift in Sources */,
@@ -570,6 +577,7 @@
 				12F27296272ABEFB006CCA97 /* RocketsModuleProtocols.swift in Sources */,
 				128B123F272A919200C41A69 /* LaunchesModuleConfigurator.swift in Sources */,
 				12F272A4272AC1A9006CCA97 /* FavoritesModuleProtocols.swift in Sources */,
+				12739222273049D800899E1F /* Launchpad.swift in Sources */,
 				124D947E272B2DD300DC2203 /* LaunchesNetworkService.swift in Sources */,
 				12F272AC272AD871006CCA97 /* LaunchCell.swift in Sources */,
 				12B1FF0E272849B400D4FEB2 /* LaunchesViewController.swift in Sources */,
