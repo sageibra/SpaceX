@@ -15,7 +15,7 @@ struct Endpoint {
 extension Endpoint {
     static func launches() -> Endpoint {
         return Endpoint(
-            path: "/v3/launches",
+            path: "/v4/launches",
             queryItems: []
         )
     }
