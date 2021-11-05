@@ -25,19 +25,21 @@ final class LaunchesModulePresenter {
 // MARK: - View Output
 extension LaunchesModulePresenter: LaunchesViewOutput {
 
-    func configure(cell: LaunchCellViewInput, forRow row: Int) {
-        let launch = model[row]
-        cell.configure(
-            mission: launch.missionName,
-            date: launch.launchDateUnix,
-            location: launch.launchSite.siteName,
-            rName: launch.rocket.rocketName,
-            launchResult: launch.launchSuccess ?? false
-        )
-    }
+    var numberOfRows: Int { model.count }
 
     func viewLoaded() { loadLaunches() }
-    var numberOfRows: Int { model.count }
+
+    func configure(cell: LaunchCellViewInput, forRow row: Int) {
+        let launch = model[row]
+
+        cell.configure(
+            mission: launch.name,
+            date: launch.dateUnix.convertDate(),
+            location: launch.launchpadInfo.name,
+            rName: launch.rocketInfo.name,
+            launchResult: launch.success ?? false
+        )
+    }
 
     func loadLaunches() {
         service.loadLaunches(endpoint) { [weak self] result in
