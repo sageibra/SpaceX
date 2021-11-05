@@ -102,11 +102,11 @@ final class LaunchCell: UICollectionViewCell {
 // MARK: - View Input
 extension LaunchCell: LaunchCellViewInput {
 
-    func configure(mission: String, date: Int, location: String, rName: String, launchResult: Bool) {
+    func configure(mission: String, date: String, location: String, rName: String, launchResult: Bool) {
         missionName.text = mission
-        missionDate.text = date.convertDate()
+        missionDate.text = date
         launchLocation.text = location
-        rocketName.text = " \(rName) "
+        rocketName.text = rName.addWhiteSpaces()
         launchSuccessIcon.tintColor = launchResult ? .systemGreen : .systemRed
         launchSuccessLabel.text = launchResult ? "Success" : "Failed"
         launchSuccessIcon.image = launchResult ? Images.success : Images.failure
