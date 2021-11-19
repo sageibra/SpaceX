@@ -11,6 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let container = DependencyContainer()
 
     func application(
         _ application: UIApplication,
@@ -18,21 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootTabBarController = UITabBarController()
-        rootTabBarController.viewControllers = createTabBarControllers()
-        window?.rootViewController = UINavigationController(rootViewController: rootTabBarController)
+        window?.rootViewController = UINavigationController(
+            rootViewController: container.makeRootViewController()
+        )
+        window?.overrideUserInterfaceStyle = container.userDefaults.theme.userInterfaceStyle
         window?.makeKeyAndVisible()
         return true
-    }
-
-    private func createTabBarControllers() -> [UIViewController] {
-        let service = LaunchesNetworkService()
-        let endpoint = Endpoint.launches()
-        var controllers: [UIViewController] = []
-        let launchesViewController = LaunchesModuleConfigurator.configureModule(service: service, endpoint: endpoint)
-        let rocketsViewController = RocketsModuleConfigurator.configureModule()
-        let favoritesViewController = FavoritesModuleConfigurator.configureModule()
-        controllers = [launchesViewController, rocketsViewController, favoritesViewController]
-        return controllers
     }
 }
