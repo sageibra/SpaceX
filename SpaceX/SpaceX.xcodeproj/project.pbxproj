@@ -7,97 +7,207 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124D93E5272B176200DC2203 /* RocketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D93E4272B176200DC2203 /* RocketCell.swift */; };
+		01972E15ADEA1D5E655F6C45 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503EABD0CF390C8B0925832 /* SettingsViewController.swift */; };
+		0F0FAB37487FDEE9BABFADE2 /* LaunchesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160B638FB672149B2FD3ABA5 /* LaunchesViewInput.swift */; };
+		12305F4C274247F70046A2F2 /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12305F4B274247F70046A2F2 /* SettingsDataSource.swift */; };
 		124D93E9272B28CA00DC2203 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D93E8272B28CA00DC2203 /* Launch.swift */; };
 		124D93EB272B297F00DC2203 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D93EA272B297F00DC2203 /* Rocket.swift */; };
 		124D9478272B2B6F00DC2203 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9477272B2B6F00DC2203 /* Endpoint.swift */; };
 		124D947A272B2C9100DC2203 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9479272B2C9100DC2203 /* NetworkServiceError.swift */; };
 		124D947C272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947B272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift */; };
 		124D947E272B2DD300DC2203 /* LaunchesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947D272B2DD200DC2203 /* LaunchesNetworkService.swift */; };
-		124D9480272BD35900DC2203 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D947F272BD35900DC2203 /* Int+Ext.swift */; };
-		124D9488272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9487272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift */; };
-		124D948C272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D948B272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift */; };
-		124D948E272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D948D272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift */; };
-		124D9494272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */; };
-		124D9496272BED2C00DC2203 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */; };
-		124D9498272BFF3E00DC2203 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9497272BFF3E00DC2203 /* ArticleViewController.swift */; };
+		124D9498272BFF3E00DC2203 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D9497272BFF3E00DC2203 /* SafariViewController.swift */; };
 		12739222273049D800899E1F /* Launchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12739221273049D700899E1F /* Launchpad.swift */; };
-		128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */; };
-		128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */; };
-		128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */; };
-		128B123F272A919200C41A69 /* LaunchesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B123E272A919200C41A69 /* LaunchesModuleConfigurator.swift */; };
+		127B0AE22745808A0019F254 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B0AE12745808A0019F254 /* SettingsCell.swift */; };
+		127B0AE4274588B50019F254 /* AppIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B0AE3274588B50019F254 /* AppIconCell.swift */; };
+		127B0AE72745AF030019F254 /* dragon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 127B0AE52745AF030019F254 /* dragon@2x.png */; };
+		127B0AE82745AF030019F254 /* dragon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 127B0AE62745AF030019F254 /* dragon@3x.png */; };
+		127B0AEA27463C4D0019F254 /* ThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B0AE927463C4D0019F254 /* ThemeCell.swift */; };
+		127B0AEC27463F070019F254 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B0AEB27463F070019F254 /* Theme.swift */; };
+		127B0AEE274644F90019F254 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B0AED274644F90019F254 /* UserDefaults+Ext.swift */; };
+		12889777273A8C88003C68D2 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12889776273A8C88003C68D2 /* TitleLabel.swift */; };
+		12889779273A8E6C003C68D2 /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12889778273A8E6C003C68D2 /* SubTitleLabel.swift */; };
+		1288979B273AC1AC003C68D2 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1288979A273AC1AC003C68D2 /* PaddingLabel.swift */; };
 		128B1241272A93BE00C41A69 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B1240272A93BE00C41A69 /* ModuleTransitionable.swift */; };
 		12B1FF0A272849B400D4FEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B1FF09272849B400D4FEB2 /* AppDelegate.swift */; };
-		12B1FF0E272849B400D4FEB2 /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B1FF0D272849B400D4FEB2 /* LaunchesViewController.swift */; };
 		12B1FF13272849B700D4FEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B1FF12272849B700D4FEB2 /* Assets.xcassets */; };
 		12B1FF16272849B700D4FEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B1FF14272849B700D4FEB2 /* LaunchScreen.storyboard */; };
-		12CADF5B273505AB0060CAE0 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CADF5A273505AB0060CAE0 /* String+Ext.swift */; };
+		12BA0C91273DB30D002681E5 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA0C90273DB30D002681E5 /* ImageCarouselView.swift */; };
+		12BFC1DC273BB9A900A2A97F /* MKMapView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFC1DB273BB9A900A2A97F /* MKMapView+Ext.swift */; };
+		12BFC1DE273BD4B200A2A97F /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFC1DD273BD4B200A2A97F /* ImageButton.swift */; };
+		12BFC1F0273C285C00A2A97F /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFC1EF273C285C00A2A97F /* CustomNavBar.swift */; };
+		12CADF6027354C2E0060CAE0 /* SafariViewModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CADF5F27354C2E0060CAE0 /* SafariViewModuleConfigurator.swift */; };
+		12E3E28127452BB900914707 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E3E28027452BB900914707 /* AppIcon.swift */; };
+		12E3E28C274531B900914707 /* classic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E3E284274531B800914707 /* classic@3x.png */; };
+		12E3E28D274531B900914707 /* classic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E3E285274531B800914707 /* classic@2x.png */; };
+		12E3E28E274531B900914707 /* globe@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E3E286274531B800914707 /* globe@3x.png */; };
+		12E3E291274531B900914707 /* globe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E3E289274531B800914707 /* globe@2x.png */; };
+		12E3E292274531B900914707 /* rocket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E3E28A274531B800914707 /* rocket@2x.png */; };
+		12E3E293274531B900914707 /* rocket@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E3E28B274531B800914707 /* rocket@3x.png */; };
+		12E8FE86273EDEBD00F8B1CF /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8FE85273EDEBD00F8B1CF /* String+Ext.swift */; };
+		12EAF5A4274792D60067123C /* AppIconModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAF5A3274792D60067123C /* AppIconModuleInput.swift */; };
+		12EAF5A6274794450067123C /* ThemeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAF5A5274794450067123C /* ThemeModuleInput.swift */; };
+		12EAF5B127479DB60067123C /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAF5B027479DB60067123C /* DependencyContainer.swift */; };
+		12EAF5B327479F000067123C /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAF5B227479F000067123C /* RootViewControllerFactory.swift */; };
+		12EAF5B62747AC760067123C /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAF5B52747AC760067123C /* URL+Ext.swift */; };
 		12F271FA272A9C85006CCA97 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F271F9272A9C85006CCA97 /* UITableView+Ext.swift */; };
 		12F271FC272A9C91006CCA97 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */; };
 		12F27290272ABB09006CCA97 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F2728F272ABB09006CCA97 /* Images.swift */; };
-		12F27292272ABE57006CCA97 /* RocketsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27291272ABE57006CCA97 /* RocketsModuleConfigurator.swift */; };
-		12F27294272ABEB9006CCA97 /* RocketsModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27293272ABEB9006CCA97 /* RocketsModuleRouter.swift */; };
-		12F27296272ABEFB006CCA97 /* RocketsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27295272ABEFB006CCA97 /* RocketsModuleProtocols.swift */; };
-		12F27298272ABF67006CCA97 /* RocketsModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27297272ABF67006CCA97 /* RocketsModulePresenter.swift */; };
-		12F2729A272ABFD4006CCA97 /* RocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F27299272ABFD4006CCA97 /* RocketsViewController.swift */; };
-		12F272A2272AC19B006CCA97 /* FavoritesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A1272AC19B006CCA97 /* FavoritesModuleConfigurator.swift */; };
-		12F272A4272AC1A9006CCA97 /* FavoritesModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A3272AC1A9006CCA97 /* FavoritesModuleProtocols.swift */; };
-		12F272A6272AC1B9006CCA97 /* FavoritesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A5272AC1B9006CCA97 /* FavoritesModulePresenter.swift */; };
-		12F272A8272AC1C8006CCA97 /* FavoritesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A7272AC1C8006CCA97 /* FavoritesModuleRouter.swift */; };
-		12F272AA272AC1D5006CCA97 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272A9272AC1D5006CCA97 /* FavoritesViewController.swift */; };
 		12F272AC272AD871006CCA97 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272AB272AD871006CCA97 /* LaunchCell.swift */; };
 		12F272AE272ADD28006CCA97 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272AD272ADD28006CCA97 /* UIView+Ext.swift */; };
 		12F272B0272AE03D006CCA97 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */; };
+		1610E70E38D47B1F9C4D8647 /* LaunchpadRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD960674BAF868E7947FE0D /* LaunchpadRouterInput.swift */; };
+		1C4B2C77AD75232C8E0E4306 /* RocketViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBEEEB5BBB5F90BA228D0C7 /* RocketViewOutput.swift */; };
+		2C24D7757F670B2AAB062BDA /* LaunchpadViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE04DD6274847956EBAA037 /* LaunchpadViewInput.swift */; };
+		2F92A057E0D4D37264115258 /* LaunchDetailsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62CE0E4EDD2B8B64CB5A828 /* LaunchDetailsRouterInput.swift */; };
+		3199F66A150E84EF7A25C908 /* LaunchpadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50A0A87073DFDEF3869289 /* LaunchpadPresenter.swift */; };
+		33CC91931B6C5419AD905B17 /* LaunchesRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFAF671306DBEFDA52DA93 /* LaunchesRouterInput.swift */; };
+		369CA715DCC2DA82DCC0A1FA /* LaunchDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6776A6CDC7DF9066FCBAA /* LaunchDetailsRouter.swift */; };
+		3BA4974BBC84FC1C85642D41 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF32834171B600B68EF12B2 /* SettingsPresenter.swift */; };
+		3EEAABC9CAE555724384B4F2 /* LaunchpadModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F478E385E3A7F5349F52111C /* LaunchpadModuleConfigurator.swift */; };
+		4EBE6DA8C1029F859986FFEE /* ThemeModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB346316B11FF2D2458B6D6C /* ThemeModuleConfigurator.swift */; };
+		53ED9EDDCC69DF1B6785E23D /* AppIconPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A831094A37E235B0823FED7 /* AppIconPresenter.swift */; };
+		5B0BE321490AFCAB50818DF1 /* AppIconViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4512D26B6A41F4E3979E46D /* AppIconViewInput.swift */; };
+		5C364A7CDC1B02F43C2FFC1C /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004C840AC6467C86C87C932 /* LaunchesViewController.swift */; };
+		5D934C4E7DD2BE61F8333354 /* RocketModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030865BF6C15BF7438F4704 /* RocketModuleInput.swift */; };
+		6021A957EC885F03DCE82DA1 /* LaunchpadModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4D12E1D3184CA0A3D7430 /* LaunchpadModuleInput.swift */; };
+		6146E5F11A763506F45D790E /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD27FE9DCE760FAF3579B574 /* SettingsRouter.swift */; };
+		6324D8DF765FE2631B159F97 /* LaunchDetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3017F0233AD17C18629904A /* LaunchDetailsViewInput.swift */; };
+		65FB6888B2B18F41AAE1AA1E /* ThemeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278556B760ECB97ABD24C03B /* ThemeViewInput.swift */; };
+		69B93E14B257650AD06F4AA1 /* RocketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAF5F5F54CF405F10DAB6C /* RocketRouter.swift */; };
+		7339C84E7DCA94333EDEA5C9 /* LaunchpadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06948E285AB593F643F844 /* LaunchpadRouter.swift */; };
+		73E23C4DA066AC39AB06BC7A /* LaunchesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0C03E88FD428AB046FB5C6 /* LaunchesRouter.swift */; };
 		79992EC75ABF8C50BA37122B /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0683A4429557FF35204567 /* Pods_SpaceX.framework */; };
+		7CAAC489D3965DE3FE44282A /* LaunchesModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7A9BD16B11F43E04CBCF7 /* LaunchesModuleInput.swift */; };
+		7E68AD9F09319876A810F009 /* LaunchDetailsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87DFF192A5A5E366224904 /* LaunchDetailsModuleInput.swift */; };
+		80B71B5E813425DF1F81A2D7 /* RocketRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A682516B9D3079F23F7DFAF /* RocketRouterInput.swift */; };
+		8BB70C037347EB47DE5D228B /* LaunchpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3DC8B4D8AC329CAAC9FD1 /* LaunchpadViewController.swift */; };
+		8DFE387F3BCDBF88217BFB17 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F8028A84031B6E99DE9E3 /* ThemeViewController.swift */; };
+		8FEB1B44545E205E88523719 /* RocketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32435245336F29B22AC12F /* RocketPresenter.swift */; };
+		918BF618E41796E4ABC4848F /* SettingsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04C9342D9E7ACA50E102B45 /* SettingsModuleConfigurator.swift */; };
+		A5871940BFBB2B9420678BDC /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD01DF8BF304DF6BBF1A515 /* SettingsViewInput.swift */; };
+		AB96B0DBFECCD17A4DDBBD5A /* AppIconViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD43E91E4BF1B8377AC0F7 /* AppIconViewOutput.swift */; };
+		C19AEC5F392C93A880D5EBFA /* LaunchDetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C2582B164FC3A644BD6E /* LaunchDetailsModuleConfigurator.swift */; };
+		C34E7763494AC9E08EC1E27F /* ThemeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4134141F5908CAC3F43A8C0 /* ThemeViewOutput.swift */; };
+		C4F0FEE81B04D6784321885E /* ThemePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C43F9C8B9F561EE514EDE1D /* ThemePresenter.swift */; };
+		C8358E1B549930C37E8286AA /* AppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C542BB028A647D8F6D9E7 /* AppIconViewController.swift */; };
+		C8BECC3AD4FCD2C34DE3D130 /* LaunchDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8621A21783F8EF84D2E53 /* LaunchDetailsPresenter.swift */; };
+		D16EA4F6EAF475BA12CC8CEC /* LaunchesViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54E969A944E230F8619940 /* LaunchesViewOutput.swift */; };
+		D511C5DF7239D33C1A423612 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54803B330DE09668196FD1E2 /* SettingsViewOutput.swift */; };
+		D5A7E582C0523CDAE2421974 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85BB4C6BF7786A8C496294 /* RocketViewController.swift */; };
+		E026854F1CAF28AADAF1D0BF /* LaunchesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB907693561410F51A464DDE /* LaunchesModuleConfigurator.swift */; };
+		E16F81974D59FE39BCC5AA74 /* LaunchpadViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C08A59E68870C293E1346 /* LaunchpadViewOutput.swift */; };
+		E272E409A524D4EB59E3FE75 /* AppIconModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843428791908971F6A2E341 /* AppIconModuleConfigurator.swift */; };
+		EA0966B02E2627DD9EE0B8BA /* LaunchDetailsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32307830CBECD8A7EE6E4F3 /* LaunchDetailsViewOutput.swift */; };
+		F19365FAF1804D2BB1B98826 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29850B484C883587CD0A8FA2 /* LaunchDetailsViewController.swift */; };
+		F31F1C9E8F335C45829C020D /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4DD17E6D7A9685EDC8736C /* SettingsRouterInput.swift */; };
+		F72C21C33F5E8A38C67ACF99 /* LaunchesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E86FE527C44D590A3AAC73 /* LaunchesPresenter.swift */; };
+		FD9E65327EBA11EC1C421159 /* RocketModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9758758D326DAC3ECB39B411 /* RocketModuleConfigurator.swift */; };
+		FEDA8DB3EAAD62A5F616543E /* RocketViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449AA879820F4F65B95C7CB /* RocketViewInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0843428791908971F6A2E341 /* AppIconModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIconModuleConfigurator.swift; sourceTree = "<group>"; };
+		0EE04DD6274847956EBAA037 /* LaunchpadViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadViewInput.swift; sourceTree = "<group>"; };
 		0F0683A4429557FF35204567 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		124D93E4272B176200DC2203 /* RocketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketCell.swift; sourceTree = "<group>"; };
+		12305F4B274247F70046A2F2 /* SettingsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
 		124D93E8272B28CA00DC2203 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		124D93EA272B297F00DC2203 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		124D9477272B2B6F00DC2203 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		124D9479272B2C9100DC2203 /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		124D947B272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesNetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		124D947D272B2DD200DC2203 /* LaunchesNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesNetworkService.swift; sourceTree = "<group>"; };
-		124D947F272BD35900DC2203 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
-		124D9487272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModulePresenter.swift; sourceTree = "<group>"; };
-		124D948B272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleRouter.swift; sourceTree = "<group>"; };
-		124D948D272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleProtocols.swift; sourceTree = "<group>"; };
-		124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleConfigurator.swift; sourceTree = "<group>"; };
-		124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsViewController.swift; path = SpaceX/LaunchDetailsModule/Configurator/LaunchDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
-		124D9497272BFF3E00DC2203 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		124D9497272BFF3E00DC2203 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		12739221273049D700899E1F /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
-		128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleRouter.swift; sourceTree = "<group>"; };
-		128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleProtocols.swift; sourceTree = "<group>"; };
-		128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModulePresenter.swift; sourceTree = "<group>"; };
-		128B123E272A919200C41A69 /* LaunchesModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModuleConfigurator.swift; sourceTree = "<group>"; };
+		127B0AE12745808A0019F254 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		127B0AE3274588B50019F254 /* AppIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconCell.swift; sourceTree = "<group>"; };
+		127B0AE52745AF030019F254 /* dragon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dragon@2x.png"; sourceTree = "<group>"; };
+		127B0AE62745AF030019F254 /* dragon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dragon@3x.png"; sourceTree = "<group>"; };
+		127B0AE927463C4D0019F254 /* ThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
+		127B0AEB27463F070019F254 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		127B0AED274644F90019F254 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
+		12889776273A8C88003C68D2 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		12889778273A8E6C003C68D2 /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
+		1288979A273AC1AC003C68D2 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		128B1240272A93BE00C41A69 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
 		12B1FF06272849B400D4FEB2 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B1FF09272849B400D4FEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12B1FF0D272849B400D4FEB2 /* LaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
 		12B1FF12272849B700D4FEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B1FF15272849B700D4FEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B1FF17272849B700D4FEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12CADF5A273505AB0060CAE0 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		12BA0C90273DB30D002681E5 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		12BFC1DB273BB9A900A2A97F /* MKMapView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Ext.swift"; sourceTree = "<group>"; };
+		12BFC1DD273BD4B200A2A97F /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		12BFC1EF273C285C00A2A97F /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		12CADF5F27354C2E0060CAE0 /* SafariViewModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewModuleConfigurator.swift; sourceTree = "<group>"; };
+		12E3E28027452BB900914707 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		12E3E284274531B800914707 /* classic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classic@3x.png"; sourceTree = "<group>"; };
+		12E3E285274531B800914707 /* classic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classic@2x.png"; sourceTree = "<group>"; };
+		12E3E286274531B800914707 /* globe@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@3x.png"; sourceTree = "<group>"; };
+		12E3E289274531B800914707 /* globe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@2x.png"; sourceTree = "<group>"; };
+		12E3E28A274531B800914707 /* rocket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocket@2x.png"; sourceTree = "<group>"; };
+		12E3E28B274531B800914707 /* rocket@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocket@3x.png"; sourceTree = "<group>"; };
+		12E8FE85273EDEBD00F8B1CF /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		12EAF5A3274792D60067123C /* AppIconModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconModuleInput.swift; sourceTree = "<group>"; };
+		12EAF5A5274794450067123C /* ThemeModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModuleInput.swift; sourceTree = "<group>"; };
+		12EAF5B027479DB60067123C /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		12EAF5B227479F000067123C /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
+		12EAF5B52747AC760067123C /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
 		12F271F9272A9C85006CCA97 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		12F2728F272ABB09006CCA97 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		12F27291272ABE57006CCA97 /* RocketsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModuleConfigurator.swift; sourceTree = "<group>"; };
-		12F27293272ABEB9006CCA97 /* RocketsModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModuleRouter.swift; sourceTree = "<group>"; };
-		12F27295272ABEFB006CCA97 /* RocketsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModuleProtocols.swift; sourceTree = "<group>"; };
-		12F27297272ABF67006CCA97 /* RocketsModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModulePresenter.swift; sourceTree = "<group>"; };
-		12F27299272ABFD4006CCA97 /* RocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewController.swift; sourceTree = "<group>"; };
-		12F272A1272AC19B006CCA97 /* FavoritesModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleConfigurator.swift; sourceTree = "<group>"; };
-		12F272A3272AC1A9006CCA97 /* FavoritesModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleProtocols.swift; sourceTree = "<group>"; };
-		12F272A5272AC1B9006CCA97 /* FavoritesModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModulePresenter.swift; sourceTree = "<group>"; };
-		12F272A7272AC1C8006CCA97 /* FavoritesModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleRouter.swift; sourceTree = "<group>"; };
-		12F272A9272AC1D5006CCA97 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		12F272AB272AD871006CCA97 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
 		12F272AD272ADD28006CCA97 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		160B638FB672149B2FD3ABA5 /* LaunchesViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesViewInput.swift; sourceTree = "<group>"; };
+		21F2C2582B164FC3A644BD6E /* LaunchDetailsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleConfigurator.swift; sourceTree = "<group>"; };
+		278556B760ECB97ABD24C03B /* ThemeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeViewInput.swift; sourceTree = "<group>"; };
+		29850B484C883587CD0A8FA2 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewController.swift; sourceTree = "<group>"; };
+		2D32435245336F29B22AC12F /* RocketPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketPresenter.swift; sourceTree = "<group>"; };
+		32FFAF671306DBEFDA52DA93 /* LaunchesRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesRouterInput.swift; sourceTree = "<group>"; };
+		3A831094A37E235B0823FED7 /* AppIconPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIconPresenter.swift; sourceTree = "<group>"; };
+		3DF32834171B600B68EF12B2 /* SettingsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		3F7F8028A84031B6E99DE9E3 /* ThemeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		49DBB4F66410E9887953F07D /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD8621A21783F8EF84D2E53 /* LaunchDetailsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsPresenter.swift; sourceTree = "<group>"; };
+		54803B330DE09668196FD1E2 /* SettingsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewOutput.swift; sourceTree = "<group>"; };
+		5A682516B9D3079F23F7DFAF /* RocketRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketRouterInput.swift; sourceTree = "<group>"; };
+		5A87DFF192A5A5E366224904 /* LaunchDetailsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModuleInput.swift; sourceTree = "<group>"; };
+		5C50A0A87073DFDEF3869289 /* LaunchpadPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadPresenter.swift; sourceTree = "<group>"; };
+		623C08A59E68870C293E1346 /* LaunchpadViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadViewOutput.swift; sourceTree = "<group>"; };
+		6C4DD17E6D7A9685EDC8736C /* SettingsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
+		6DF4D12E1D3184CA0A3D7430 /* LaunchpadModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadModuleInput.swift; sourceTree = "<group>"; };
+		7449AA879820F4F65B95C7CB /* RocketViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketViewInput.swift; sourceTree = "<group>"; };
+		7C43F9C8B9F561EE514EDE1D /* ThemePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemePresenter.swift; sourceTree = "<group>"; };
 		8A4D450DCF09DC3A64D0927C /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		8D54E969A944E230F8619940 /* LaunchesViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesViewOutput.swift; sourceTree = "<group>"; };
+		9030865BF6C15BF7438F4704 /* RocketModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketModuleInput.swift; sourceTree = "<group>"; };
+		934C542BB028A647D8F6D9E7 /* AppIconViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIconViewController.swift; sourceTree = "<group>"; };
+		9758758D326DAC3ECB39B411 /* RocketModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketModuleConfigurator.swift; sourceTree = "<group>"; };
+		98BAF5F5F54CF405F10DAB6C /* RocketRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketRouter.swift; sourceTree = "<group>"; };
+		A7E86FE527C44D590A3AAC73 /* LaunchesPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesPresenter.swift; sourceTree = "<group>"; };
+		AA85BB4C6BF7786A8C496294 /* RocketViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
+		B004C840AC6467C86C87C932 /* LaunchesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
+		B3017F0233AD17C18629904A /* LaunchDetailsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewInput.swift; sourceTree = "<group>"; };
+		B503EABD0CF390C8B0925832 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BB346316B11FF2D2458B6D6C /* ThemeModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeModuleConfigurator.swift; sourceTree = "<group>"; };
+		BBC6776A6CDC7DF9066FCBAA /* LaunchDetailsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsRouter.swift; sourceTree = "<group>"; };
+		BC06948E285AB593F643F844 /* LaunchpadRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadRouter.swift; sourceTree = "<group>"; };
+		BD27FE9DCE760FAF3579B574 /* SettingsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		BFD01DF8BF304DF6BBF1A515 /* SettingsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
+		C0DD43E91E4BF1B8377AC0F7 /* AppIconViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIconViewOutput.swift; sourceTree = "<group>"; };
+		C32307830CBECD8A7EE6E4F3 /* LaunchDetailsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewOutput.swift; sourceTree = "<group>"; };
+		C3F7A9BD16B11F43E04CBCF7 /* LaunchesModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesModuleInput.swift; sourceTree = "<group>"; };
+		C62CE0E4EDD2B8B64CB5A828 /* LaunchDetailsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchDetailsRouterInput.swift; sourceTree = "<group>"; };
+		CDBEEEB5BBB5F90BA228D0C7 /* RocketViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketViewOutput.swift; sourceTree = "<group>"; };
+		D4512D26B6A41F4E3979E46D /* AppIconViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIconViewInput.swift; sourceTree = "<group>"; };
+		DB0C03E88FD428AB046FB5C6 /* LaunchesRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesRouter.swift; sourceTree = "<group>"; };
+		E4134141F5908CAC3F43A8C0 /* ThemeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeViewOutput.swift; sourceTree = "<group>"; };
+		E4F3DC8B4D8AC329CAAC9FD1 /* LaunchpadViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadViewController.swift; sourceTree = "<group>"; };
+		F04C9342D9E7ACA50E102B45 /* SettingsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleConfigurator.swift; sourceTree = "<group>"; };
+		F478E385E3A7F5349F52111C /* LaunchpadModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadModuleConfigurator.swift; sourceTree = "<group>"; };
+		FB907693561410F51A464DDE /* LaunchesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchesModuleConfigurator.swift; sourceTree = "<group>"; };
+		FCD960674BAF868E7947FE0D /* LaunchpadRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LaunchpadRouterInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,110 +260,17 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		124D9481272BEB6000DC2203 /* LaunchDetailsModule */ = {
+		12889775273A8C46003C68D2 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				124D9486272BEBB000DC2203 /* Protocols */,
-				124D9485272BEBA000DC2203 /* Router */,
-				124D9484272BEB9900DC2203 /* View */,
-				124D9483272BEB9000DC2203 /* Presenter */,
-				124D9482272BEB8400DC2203 /* Configurator */,
+				12889776273A8C88003C68D2 /* TitleLabel.swift */,
+				12889778273A8E6C003C68D2 /* SubTitleLabel.swift */,
+				1288979A273AC1AC003C68D2 /* PaddingLabel.swift */,
+				12BFC1DD273BD4B200A2A97F /* ImageButton.swift */,
+				12BFC1EF273C285C00A2A97F /* CustomNavBar.swift */,
+				12BA0C90273DB30D002681E5 /* ImageCarouselView.swift */,
 			);
-			path = LaunchDetailsModule;
-			sourceTree = "<group>";
-		};
-		124D9482272BEB8400DC2203 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				124D9493272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		124D9483272BEB9000DC2203 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				124D9487272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		124D9484272BEB9900DC2203 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				124D9495272BED2C00DC2203 /* LaunchDetailsViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		124D9485272BEBA000DC2203 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				124D948B272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		124D9486272BEBB000DC2203 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				124D948D272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		128B1232272A907A00C41A69 /* LaunchesModule */ = {
-			isa = PBXGroup;
-			children = (
-				128B1237272A90AF00C41A69 /* Presenter */,
-				128B1236272A90A600C41A69 /* View */,
-				128B1235272A909F00C41A69 /* Protocols */,
-				128B1234272A909900C41A69 /* Router */,
-				128B1233272A908900C41A69 /* Configurator */,
-			);
-			path = LaunchesModule;
-			sourceTree = "<group>";
-		};
-		128B1233272A908900C41A69 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				128B123E272A919200C41A69 /* LaunchesModuleConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		128B1234272A909900C41A69 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				128B1238272A90FC00C41A69 /* LaunchesModuleRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		128B1235272A909F00C41A69 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				128B123A272A914300C41A69 /* LaunchesModuleProtocols.swift */,
-				128B1240272A93BE00C41A69 /* ModuleTransitionable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		128B1236272A90A600C41A69 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				12B1FF0D272849B400D4FEB2 /* LaunchesViewController.swift */,
-				12F272AB272AD871006CCA97 /* LaunchCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		128B1237272A90AF00C41A69 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				128B123C272A916900C41A69 /* LaunchesModulePresenter.swift */,
-			);
-			path = Presenter;
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		12B1FEFD272849B400D4FEB2 = {
@@ -278,15 +295,11 @@
 			isa = PBXGroup;
 			children = (
 				12B1FF09272849B400D4FEB2 /* AppDelegate.swift */,
-				124D9481272BEB6000DC2203 /* LaunchDetailsModule */,
 				124D93EC272B2AAD00DC2203 /* Services */,
 				124D93E7272B28A700DC2203 /* Model */,
-				12F2729B272AC134006CCA97 /* FavoritesModule */,
+				12EAF5A22746ADE80067123C /* Screens */,
 				12F27203272AB919006CCA97 /* Resources */,
-				12F271FD272AB70D006CCA97 /* RocketsModule */,
-				128B1232272A907A00C41A69 /* LaunchesModule */,
 				12B1FF1D27284C6200D4FEB2 /* Supporting files */,
-				124D9497272BFF3E00DC2203 /* ArticleViewController.swift */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -300,6 +313,72 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		12CADF5C27354BC00060CAE0 /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				12CADF5E27354BD60060CAE0 /* Configurator */,
+				12CADF5D27354BCF0060CAE0 /* View */,
+			);
+			path = Safari;
+			sourceTree = "<group>";
+		};
+		12CADF5D27354BCF0060CAE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				124D9497272BFF3E00DC2203 /* SafariViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12CADF5E27354BD60060CAE0 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				12CADF5F27354C2E0060CAE0 /* SafariViewModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		12E3E283274531B800914707 /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				12E3E284274531B800914707 /* classic@3x.png */,
+				127B0AE52745AF030019F254 /* dragon@2x.png */,
+				127B0AE62745AF030019F254 /* dragon@3x.png */,
+				12E3E285274531B800914707 /* classic@2x.png */,
+				12E3E286274531B800914707 /* globe@3x.png */,
+				12E3E289274531B800914707 /* globe@2x.png */,
+				12E3E28A274531B800914707 /* rocket@2x.png */,
+				12E3E28B274531B800914707 /* rocket@3x.png */,
+			);
+			path = AppIcons;
+			sourceTree = "<group>";
+		};
+		12EAF5A22746ADE80067123C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				12EAF5B42747A3B30067123C /* Root */,
+				A28185038F5E40F51FDE870D /* Settings */,
+				55D6511932AF34A16CC2FA90 /* Launches */,
+				A79C457CB3A79975957C236C /* LaunchDetails */,
+				37036BB63C2716A5ECE2B0A6 /* Rocket */,
+				A25E727B3C973A83D9E57C96 /* Launchpad */,
+				12CADF5C27354BC00060CAE0 /* Safari */,
+				5CD38A17877277B859391BC5 /* AppIcon */,
+				BF42F8E1F15BE8D7E38F51EB /* Theme */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		12EAF5B42747A3B30067123C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				12EAF5B027479DB60067123C /* DependencyContainer.swift */,
+				12EAF5B227479F000067123C /* RootViewControllerFactory.swift */,
+				128B1240272A93BE00C41A69 /* ModuleTransitionable.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		12F271F8272A9C71006CCA97 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,68 +386,19 @@
 				12F271FB272A9C91006CCA97 /* UICollectionView+Ext.swift */,
 				12F272AD272ADD28006CCA97 /* UIView+Ext.swift */,
 				12F272AF272AE03D006CCA97 /* UIStackView+Ext.swift */,
-				124D947F272BD35900DC2203 /* Int+Ext.swift */,
-				12CADF5A273505AB0060CAE0 /* String+Ext.swift */,
+				12BFC1DB273BB9A900A2A97F /* MKMapView+Ext.swift */,
+				12E8FE85273EDEBD00F8B1CF /* String+Ext.swift */,
+				127B0AED274644F90019F254 /* UserDefaults+Ext.swift */,
+				12EAF5B52747AC760067123C /* URL+Ext.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		12F271FD272AB70D006CCA97 /* RocketsModule */ = {
-			isa = PBXGroup;
-			children = (
-				12F27202272AB746006CCA97 /* Configurator */,
-				12F27201272AB738006CCA97 /* Router */,
-				12F27200272AB729006CCA97 /* Protocols */,
-				12F271FF272AB723006CCA97 /* Presenter */,
-				12F271FE272AB71B006CCA97 /* View */,
-			);
-			path = RocketsModule;
-			sourceTree = "<group>";
-		};
-		12F271FE272AB71B006CCA97 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				12F27299272ABFD4006CCA97 /* RocketsViewController.swift */,
-				124D93E4272B176200DC2203 /* RocketCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		12F271FF272AB723006CCA97 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				12F27297272ABF67006CCA97 /* RocketsModulePresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		12F27200272AB729006CCA97 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				12F27295272ABEFB006CCA97 /* RocketsModuleProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		12F27201272AB738006CCA97 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				12F27293272ABEB9006CCA97 /* RocketsModuleRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		12F27202272AB746006CCA97 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				12F27291272ABE57006CCA97 /* RocketsModuleConfigurator.swift */,
-			);
-			path = Configurator;
 			sourceTree = "<group>";
 		};
 		12F27203272AB919006CCA97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12E3E283274531B800914707 /* AppIcons */,
+				12889775273A8C46003C68D2 /* Custom Views */,
 				12B1FF12272849B700D4FEB2 /* Assets.xcassets */,
 				12F271F8272A9C71006CCA97 /* Extensions */,
 				12F2728E272ABA3E006CCA97 /* Strings */,
@@ -392,56 +422,290 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
-		12F2729B272AC134006CCA97 /* FavoritesModule */ = {
+		37036BB63C2716A5ECE2B0A6 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
-				12F272A0272AC161006CCA97 /* Configurator */,
-				12F2729F272AC158006CCA97 /* Protocols */,
-				12F2729E272AC151006CCA97 /* Presenter */,
-				12F2729D272AC14A006CCA97 /* Router */,
-				12F2729C272AC143006CCA97 /* View */,
+				9412AA3137E107D57C27FB63 /* Configurator */,
+				E243E2B95BF1DC66913A1EDD /* Router */,
+				BE3DAF9D02DEEAA6840DD0CD /* Presenter */,
+				90431F7E89B728D7E986CB79 /* View */,
 			);
-			path = FavoritesModule;
+			path = Rocket;
 			sourceTree = "<group>";
 		};
-		12F2729C272AC143006CCA97 /* View */ = {
+		43CB626808F5BCBFC8917F29 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				12F272A9272AC1D5006CCA97 /* FavoritesViewController.swift */,
+				B503EABD0CF390C8B0925832 /* SettingsViewController.swift */,
+				BFD01DF8BF304DF6BBF1A515 /* SettingsViewInput.swift */,
+				54803B330DE09668196FD1E2 /* SettingsViewOutput.swift */,
+				12305F4B274247F70046A2F2 /* SettingsDataSource.swift */,
+				127B0AE12745808A0019F254 /* SettingsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		12F2729D272AC14A006CCA97 /* Router */ = {
+		4CC6BE155F44429820F74E98 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				12F272A7272AC1C8006CCA97 /* FavoritesModuleRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		12F2729E272AC151006CCA97 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				12F272A5272AC1B9006CCA97 /* FavoritesModulePresenter.swift */,
+				3DF32834171B600B68EF12B2 /* SettingsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		12F2729F272AC158006CCA97 /* Protocols */ = {
+		4DEE161DF3DC43DF0605B897 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				12F272A3272AC1A9006CCA97 /* FavoritesModuleProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		12F272A0272AC161006CCA97 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				12F272A1272AC19B006CCA97 /* FavoritesModuleConfigurator.swift */,
+				21F2C2582B164FC3A644BD6E /* LaunchDetailsModuleConfigurator.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		50166749DFCAA03353CD4259 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A7E86FE527C44D590A3AAC73 /* LaunchesPresenter.swift */,
+				C3F7A9BD16B11F43E04CBCF7 /* LaunchesModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		55D6511932AF34A16CC2FA90 /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				DCE8B6EB73BD094E639919D5 /* Configurator */,
+				9B5AB4956BB50B01C69F80B1 /* Router */,
+				50166749DFCAA03353CD4259 /* Presenter */,
+				EBFCEA489788DF34DF959EEC /* View */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		5CD38A17877277B859391BC5 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				88450DF223E4796D942D2CD0 /* Configurator */,
+				CD76A92B5FA92F8FAAF514A0 /* Presenter */,
+				642B444C9E703894F6A7FD33 /* View */,
+			);
+			path = AppIcon;
+			sourceTree = "<group>";
+		};
+		642B444C9E703894F6A7FD33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				934C542BB028A647D8F6D9E7 /* AppIconViewController.swift */,
+				D4512D26B6A41F4E3979E46D /* AppIconViewInput.swift */,
+				C0DD43E91E4BF1B8377AC0F7 /* AppIconViewOutput.swift */,
+				127B0AE3274588B50019F254 /* AppIconCell.swift */,
+				12E3E28027452BB900914707 /* AppIcon.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80E438D623DE397AFACD9473 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5C50A0A87073DFDEF3869289 /* LaunchpadPresenter.swift */,
+				6DF4D12E1D3184CA0A3D7430 /* LaunchpadModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		88450DF223E4796D942D2CD0 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0843428791908971F6A2E341 /* AppIconModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8F8B9D46D971667A9B98C716 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F04C9342D9E7ACA50E102B45 /* SettingsModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8F97743998023810B8582C42 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4CD8621A21783F8EF84D2E53 /* LaunchDetailsPresenter.swift */,
+				5A87DFF192A5A5E366224904 /* LaunchDetailsModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		90431F7E89B728D7E986CB79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA85BB4C6BF7786A8C496294 /* RocketViewController.swift */,
+				7449AA879820F4F65B95C7CB /* RocketViewInput.swift */,
+				CDBEEEB5BBB5F90BA228D0C7 /* RocketViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93743BEF77C4B2701F208B0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F7F8028A84031B6E99DE9E3 /* ThemeViewController.swift */,
+				278556B760ECB97ABD24C03B /* ThemeViewInput.swift */,
+				E4134141F5908CAC3F43A8C0 /* ThemeViewOutput.swift */,
+				127B0AE927463C4D0019F254 /* ThemeCell.swift */,
+				127B0AEB27463F070019F254 /* Theme.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9412AA3137E107D57C27FB63 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				9758758D326DAC3ECB39B411 /* RocketModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9B5AB4956BB50B01C69F80B1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DB0C03E88FD428AB046FB5C6 /* LaunchesRouter.swift */,
+				32FFAF671306DBEFDA52DA93 /* LaunchesRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9DF408F6216F0C52429F2A83 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD27FE9DCE760FAF3579B574 /* SettingsRouter.swift */,
+				6C4DD17E6D7A9685EDC8736C /* SettingsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A25E727B3C973A83D9E57C96 /* Launchpad */ = {
+			isa = PBXGroup;
+			children = (
+				DFD78C439404884C2F6F8734 /* Configurator */,
+				C9F4C39BDC5EB298BAF9DADA /* Router */,
+				80E438D623DE397AFACD9473 /* Presenter */,
+				FDA39574D7B76B3C0C066DF0 /* View */,
+			);
+			path = Launchpad;
+			sourceTree = "<group>";
+		};
+		A28185038F5E40F51FDE870D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8F8B9D46D971667A9B98C716 /* Configurator */,
+				9DF408F6216F0C52429F2A83 /* Router */,
+				4CC6BE155F44429820F74E98 /* Presenter */,
+				43CB626808F5BCBFC8917F29 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A656B87CC8C8D195A11240A8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7C43F9C8B9F561EE514EDE1D /* ThemePresenter.swift */,
+				12EAF5A5274794450067123C /* ThemeModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A79C457CB3A79975957C236C /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4DEE161DF3DC43DF0605B897 /* Configurator */,
+				DB31CCDAB0AE3BF159829504 /* Router */,
+				8F97743998023810B8582C42 /* Presenter */,
+				DF2722E869123131EEDAB130 /* View */,
+			);
+			path = LaunchDetails;
+			sourceTree = "<group>";
+		};
+		BE3DAF9D02DEEAA6840DD0CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D32435245336F29B22AC12F /* RocketPresenter.swift */,
+				9030865BF6C15BF7438F4704 /* RocketModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF42F8E1F15BE8D7E38F51EB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FBCD0FDCB93B77C120F35D04 /* Configurator */,
+				A656B87CC8C8D195A11240A8 /* Presenter */,
+				93743BEF77C4B2701F208B0D /* View */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C9F4C39BDC5EB298BAF9DADA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC06948E285AB593F643F844 /* LaunchpadRouter.swift */,
+				FCD960674BAF868E7947FE0D /* LaunchpadRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CD76A92B5FA92F8FAAF514A0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3A831094A37E235B0823FED7 /* AppIconPresenter.swift */,
+				12EAF5A3274792D60067123C /* AppIconModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DB31CCDAB0AE3BF159829504 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BBC6776A6CDC7DF9066FCBAA /* LaunchDetailsRouter.swift */,
+				C62CE0E4EDD2B8B64CB5A828 /* LaunchDetailsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DCE8B6EB73BD094E639919D5 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FB907693561410F51A464DDE /* LaunchesModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DF2722E869123131EEDAB130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29850B484C883587CD0A8FA2 /* LaunchDetailsViewController.swift */,
+				B3017F0233AD17C18629904A /* LaunchDetailsViewInput.swift */,
+				C32307830CBECD8A7EE6E4F3 /* LaunchDetailsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFD78C439404884C2F6F8734 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F478E385E3A7F5349F52111C /* LaunchpadModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E243E2B95BF1DC66913A1EDD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				98BAF5F5F54CF405F10DAB6C /* RocketRouter.swift */,
+				5A682516B9D3079F23F7DFAF /* RocketRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		E6D5040E9F000378EB78ADB6 /* Frameworks */ = {
@@ -450,6 +714,35 @@
 				0F0683A4429557FF35204567 /* Pods_SpaceX.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBFCEA489788DF34DF959EEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B004C840AC6467C86C87C932 /* LaunchesViewController.swift */,
+				12F272AB272AD871006CCA97 /* LaunchCell.swift */,
+				160B638FB672149B2FD3ABA5 /* LaunchesViewInput.swift */,
+				8D54E969A944E230F8619940 /* LaunchesViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBCD0FDCB93B77C120F35D04 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				BB346316B11FF2D2458B6D6C /* ThemeModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FDA39574D7B76B3C0C066DF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4F3DC8B4D8AC329CAAC9FD1 /* LaunchpadViewController.swift */,
+				0EE04DD6274847956EBAA037 /* LaunchpadViewInput.swift */,
+				623C08A59E68870C293E1346 /* LaunchpadViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,8 +804,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E3E293274531B900914707 /* rocket@3x.png in Resources */,
 				12B1FF16272849B700D4FEB2 /* LaunchScreen.storyboard in Resources */,
+				127B0AE72745AF030019F254 /* dragon@2x.png in Resources */,
+				12E3E291274531B900914707 /* globe@2x.png in Resources */,
+				127B0AE82745AF030019F254 /* dragon@3x.png in Resources */,
+				12E3E28D274531B900914707 /* classic@2x.png in Resources */,
+				12E3E292274531B900914707 /* rocket@2x.png in Resources */,
+				12E3E28E274531B900914707 /* globe@3x.png in Resources */,
 				12B1FF13272849B700D4FEB2 /* Assets.xcassets in Resources */,
+				12E3E28C274531B900914707 /* classic@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,45 +867,92 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124D948C272BEBFC00DC2203 /* LaunchDetailsModuleRouter.swift in Sources */,
-				12F2729A272ABFD4006CCA97 /* RocketsViewController.swift in Sources */,
+				12BFC1F0273C285C00A2A97F /* CustomNavBar.swift in Sources */,
 				124D9478272B2B6F00DC2203 /* Endpoint.swift in Sources */,
-				12CADF5B273505AB0060CAE0 /* String+Ext.swift in Sources */,
-				124D9480272BD35900DC2203 /* Int+Ext.swift in Sources */,
-				124D9494272BED1B00DC2203 /* LaunchDetailsModuleConfigurator.swift in Sources */,
+				12889779273A8E6C003C68D2 /* SubTitleLabel.swift in Sources */,
 				124D93EB272B297F00DC2203 /* Rocket.swift in Sources */,
-				128B123D272A916900C41A69 /* LaunchesModulePresenter.swift in Sources */,
-				12F27296272ABEFB006CCA97 /* RocketsModuleProtocols.swift in Sources */,
-				128B123F272A919200C41A69 /* LaunchesModuleConfigurator.swift in Sources */,
-				12F272A4272AC1A9006CCA97 /* FavoritesModuleProtocols.swift in Sources */,
 				12739222273049D800899E1F /* Launchpad.swift in Sources */,
 				124D947E272B2DD300DC2203 /* LaunchesNetworkService.swift in Sources */,
+				1288979B273AC1AC003C68D2 /* PaddingLabel.swift in Sources */,
 				12F272AC272AD871006CCA97 /* LaunchCell.swift in Sources */,
-				12B1FF0E272849B400D4FEB2 /* LaunchesViewController.swift in Sources */,
+				12BA0C91273DB30D002681E5 /* ImageCarouselView.swift in Sources */,
 				124D947C272B2D1000DC2203 /* LaunchesNetworkServiceProtocol.swift in Sources */,
 				12F272B0272AE03D006CCA97 /* UIStackView+Ext.swift in Sources */,
 				12F27290272ABB09006CCA97 /* Images.swift in Sources */,
 				12F271FA272A9C85006CCA97 /* UITableView+Ext.swift in Sources */,
 				12F271FC272A9C91006CCA97 /* UICollectionView+Ext.swift in Sources */,
-				12F272A8272AC1C8006CCA97 /* FavoritesModuleRouter.swift in Sources */,
-				12F272A2272AC19B006CCA97 /* FavoritesModuleConfigurator.swift in Sources */,
+				12CADF6027354C2E0060CAE0 /* SafariViewModuleConfigurator.swift in Sources */,
+				12BFC1DC273BB9A900A2A97F /* MKMapView+Ext.swift in Sources */,
 				12F272AE272ADD28006CCA97 /* UIView+Ext.swift in Sources */,
-				12F27298272ABF67006CCA97 /* RocketsModulePresenter.swift in Sources */,
-				12F27292272ABE57006CCA97 /* RocketsModuleConfigurator.swift in Sources */,
-				12F272A6272AC1B9006CCA97 /* FavoritesModulePresenter.swift in Sources */,
+				12BFC1DE273BD4B200A2A97F /* ImageButton.swift in Sources */,
+				127B0AEE274644F90019F254 /* UserDefaults+Ext.swift in Sources */,
 				12B1FF0A272849B400D4FEB2 /* AppDelegate.swift in Sources */,
-				124D9498272BFF3E00DC2203 /* ArticleViewController.swift in Sources */,
+				124D9498272BFF3E00DC2203 /* SafariViewController.swift in Sources */,
 				124D93E9272B28CA00DC2203 /* Launch.swift in Sources */,
-				124D9488272BEBE300DC2203 /* LaunchDetailsModulePresenter.swift in Sources */,
+				127B0AE22745808A0019F254 /* SettingsCell.swift in Sources */,
 				124D947A272B2C9100DC2203 /* NetworkServiceError.swift in Sources */,
-				124D9496272BED2C00DC2203 /* LaunchDetailsViewController.swift in Sources */,
+				12305F4C274247F70046A2F2 /* SettingsDataSource.swift in Sources */,
 				128B1241272A93BE00C41A69 /* ModuleTransitionable.swift in Sources */,
-				124D93E5272B176200DC2203 /* RocketCell.swift in Sources */,
-				128B123B272A914300C41A69 /* LaunchesModuleProtocols.swift in Sources */,
-				124D948E272BEC0600DC2203 /* LaunchDetailsModuleProtocols.swift in Sources */,
-				12F27294272ABEB9006CCA97 /* RocketsModuleRouter.swift in Sources */,
-				12F272AA272AC1D5006CCA97 /* FavoritesViewController.swift in Sources */,
-				128B1239272A90FC00C41A69 /* LaunchesModuleRouter.swift in Sources */,
+				12E8FE86273EDEBD00F8B1CF /* String+Ext.swift in Sources */,
+				12EAF5A4274792D60067123C /* AppIconModuleInput.swift in Sources */,
+				12889777273A8C88003C68D2 /* TitleLabel.swift in Sources */,
+				FD9E65327EBA11EC1C421159 /* RocketModuleConfigurator.swift in Sources */,
+				69B93E14B257650AD06F4AA1 /* RocketRouter.swift in Sources */,
+				80B71B5E813425DF1F81A2D7 /* RocketRouterInput.swift in Sources */,
+				8FEB1B44545E205E88523719 /* RocketPresenter.swift in Sources */,
+				5D934C4E7DD2BE61F8333354 /* RocketModuleInput.swift in Sources */,
+				D5A7E582C0523CDAE2421974 /* RocketViewController.swift in Sources */,
+				12EAF5B327479F000067123C /* RootViewControllerFactory.swift in Sources */,
+				FEDA8DB3EAAD62A5F616543E /* RocketViewInput.swift in Sources */,
+				1C4B2C77AD75232C8E0E4306 /* RocketViewOutput.swift in Sources */,
+				3EEAABC9CAE555724384B4F2 /* LaunchpadModuleConfigurator.swift in Sources */,
+				7339C84E7DCA94333EDEA5C9 /* LaunchpadRouter.swift in Sources */,
+				1610E70E38D47B1F9C4D8647 /* LaunchpadRouterInput.swift in Sources */,
+				12EAF5A6274794450067123C /* ThemeModuleInput.swift in Sources */,
+				3199F66A150E84EF7A25C908 /* LaunchpadPresenter.swift in Sources */,
+				6021A957EC885F03DCE82DA1 /* LaunchpadModuleInput.swift in Sources */,
+				8BB70C037347EB47DE5D228B /* LaunchpadViewController.swift in Sources */,
+				12EAF5B62747AC760067123C /* URL+Ext.swift in Sources */,
+				2C24D7757F670B2AAB062BDA /* LaunchpadViewInput.swift in Sources */,
+				127B0AE4274588B50019F254 /* AppIconCell.swift in Sources */,
+				E16F81974D59FE39BCC5AA74 /* LaunchpadViewOutput.swift in Sources */,
+				918BF618E41796E4ABC4848F /* SettingsModuleConfigurator.swift in Sources */,
+				6146E5F11A763506F45D790E /* SettingsRouter.swift in Sources */,
+				F31F1C9E8F335C45829C020D /* SettingsRouterInput.swift in Sources */,
+				3BA4974BBC84FC1C85642D41 /* SettingsPresenter.swift in Sources */,
+				127B0AEA27463C4D0019F254 /* ThemeCell.swift in Sources */,
+				01972E15ADEA1D5E655F6C45 /* SettingsViewController.swift in Sources */,
+				A5871940BFBB2B9420678BDC /* SettingsViewInput.swift in Sources */,
+				D511C5DF7239D33C1A423612 /* SettingsViewOutput.swift in Sources */,
+				E026854F1CAF28AADAF1D0BF /* LaunchesModuleConfigurator.swift in Sources */,
+				73E23C4DA066AC39AB06BC7A /* LaunchesRouter.swift in Sources */,
+				33CC91931B6C5419AD905B17 /* LaunchesRouterInput.swift in Sources */,
+				F72C21C33F5E8A38C67ACF99 /* LaunchesPresenter.swift in Sources */,
+				7CAAC489D3965DE3FE44282A /* LaunchesModuleInput.swift in Sources */,
+				5C364A7CDC1B02F43C2FFC1C /* LaunchesViewController.swift in Sources */,
+				0F0FAB37487FDEE9BABFADE2 /* LaunchesViewInput.swift in Sources */,
+				12E3E28127452BB900914707 /* AppIcon.swift in Sources */,
+				D16EA4F6EAF475BA12CC8CEC /* LaunchesViewOutput.swift in Sources */,
+				C19AEC5F392C93A880D5EBFA /* LaunchDetailsModuleConfigurator.swift in Sources */,
+				369CA715DCC2DA82DCC0A1FA /* LaunchDetailsRouter.swift in Sources */,
+				2F92A057E0D4D37264115258 /* LaunchDetailsRouterInput.swift in Sources */,
+				C8BECC3AD4FCD2C34DE3D130 /* LaunchDetailsPresenter.swift in Sources */,
+				7E68AD9F09319876A810F009 /* LaunchDetailsModuleInput.swift in Sources */,
+				F19365FAF1804D2BB1B98826 /* LaunchDetailsViewController.swift in Sources */,
+				12EAF5B127479DB60067123C /* DependencyContainer.swift in Sources */,
+				6324D8DF765FE2631B159F97 /* LaunchDetailsViewInput.swift in Sources */,
+				EA0966B02E2627DD9EE0B8BA /* LaunchDetailsViewOutput.swift in Sources */,
+				E272E409A524D4EB59E3FE75 /* AppIconModuleConfigurator.swift in Sources */,
+				53ED9EDDCC69DF1B6785E23D /* AppIconPresenter.swift in Sources */,
+				C8358E1B549930C37E8286AA /* AppIconViewController.swift in Sources */,
+				5B0BE321490AFCAB50818DF1 /* AppIconViewInput.swift in Sources */,
+				AB96B0DBFECCD17A4DDBBD5A /* AppIconViewOutput.swift in Sources */,
+				4EBE6DA8C1029F859986FFEE /* ThemeModuleConfigurator.swift in Sources */,
+				127B0AEC27463F070019F254 /* Theme.swift in Sources */,
+				C4F0FEE81B04D6784321885E /* ThemePresenter.swift in Sources */,
+				8DFE387F3BCDBF88217BFB17 /* ThemeViewController.swift in Sources */,
+				65FB6888B2B18F41AAE1AA1E /* ThemeViewInput.swift in Sources */,
+				C34E7763494AC9E08EC1E27F /* ThemeViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
