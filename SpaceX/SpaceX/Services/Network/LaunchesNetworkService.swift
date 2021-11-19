@@ -6,18 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
-class LaunchesNetworkService {
+final class LaunchesNetworkService {
 
-    private var session: URLSession!
-    private let configuration = URLSessionConfiguration.default
-    private var decoder: JSONDecoder = {
+    private let session = URLSession(configuration: .default)
+    private let decoder: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return decoder
     }()
-
-    init() { session = URLSession(configuration: configuration) }
 
     private func httpResponse(data: Data?, response: URLResponse?) throws -> Data {
         guard let httpResponse = response as? HTTPURLResponse else {
@@ -37,16 +35,37 @@ class LaunchesNetworkService {
 }
 
 extension LaunchesNetworkService: LaunchesNetworkServiceProtocol {
-
     typealias Handler = (Data?, URLResponse?, Error?) -> Void
 
     func loadLaunches(_ endpoint: Endpoint, completion: @escaping (LoadLaunchesResponse) -> Void) {
-        let request = URLRequest(url: endpoint.url!)
+        guard let url = endpoint.url else {
+            completion(.failure(NetworkServiceError.incorrectUrl))
+            return
+        }
+
+        let request = URLRequest(url: url)
+
         let handler: Handler = { rawData, response, error in
             do {
                 let data = try self.httpResponse(data: rawData, response: response)
                 let response = try self.decoder.decode([Launch].self, from: data)
                 completion(.success(response))
+            } catch {
+                completion(.failure((error as? NetworkServiceError) ?? .decodingError(error)))
+            }
+        }
+
+        session.dataTask(with: request, completionHandler: handler).resume()
+    }
+
+    func loadImage(from url: URL, completion: @escaping (LoadImageResponse) -> Void) {
+        let request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy)
+
+        let handler: Handler = { rawData, response, error in
+            do {
+                let data = try self.httpResponse(data: rawData, response: response)
+                guard let image = UIImage(data: data) else { return }
+                completion(.success(image))
             } catch {
                 completion(.failure((error as? NetworkServiceError) ?? .decodingError(error)))
             }

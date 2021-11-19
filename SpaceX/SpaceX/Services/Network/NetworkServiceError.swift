@@ -11,6 +11,7 @@ enum NetworkServiceError: Error, CustomStringConvertible {
     case serverError(Int)
     case networkError(Error)
     case decodingError(Error)
+    case incorrectUrl
 
     var description: String {
         switch self {
@@ -19,6 +20,7 @@ enum NetworkServiceError: Error, CustomStringConvertible {
         case .serverError(let status): return "Server Error - \(status)"
         case .networkError(let error): return "Failed to load the request: \(error)"
         case .decodingError(let decError): return "Failed to process response: \(decError)"
+        case .incorrectUrl: return "An error occurred while processing the URL"
         }
     }
 }
