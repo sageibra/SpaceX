@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "githubDark.pdf",
       "idiom" : "universal"
     },
     {
@@ -10,11 +11,16 @@
           "value" : "dark"
         }
       ],
+      "filename" : "github.pdf",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "original"
   }
 }
