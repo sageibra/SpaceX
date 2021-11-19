@@ -13,9 +13,8 @@ struct Launch: Decodable {
     let success: Bool?
     let details: String?
     let launchpad: String
-    let flightNumber: Int
     let name: String
-    let dateUnix: Int
+    let dateLocal: String
     let upcoming: Bool
 
     var rocketInfo: Rocket {
@@ -29,10 +28,10 @@ struct Launch: Decodable {
 
     var launchpadInfo: Launchpad {
         switch launchpad {
-        case "5e9e4501f509094ba4566f84": return Launchpad.ccsfs
-        case "5e9e4502f509092b78566f87": return Launchpad.vafb
-        case "5e9e4502f509094188566f88": return Launchpad.ksc
-        case "5e9e4502f5090995de566f86": return Launchpad.kwajaleinAtoll
+        case "5e9e4501f509094ba4566f84": return Launchpad.capeCanaveral40
+        case "5e9e4502f509092b78566f87": return Launchpad.vandenbergSFB
+        case "5e9e4502f509094188566f88": return Launchpad.capeCanaveral
+        case "5e9e4502f5090995de566f86": return Launchpad.omelekIsland
         default: return Launchpad.unknown
         }
     }
@@ -42,7 +41,6 @@ struct Launch: Decodable {
 struct Links: Decodable {
     let patch: Patch
     let flickr: Flickr
-    let webcast: String?
     let article: String?
     let wikipedia: String?
 }
@@ -54,5 +52,5 @@ struct Flickr: Decodable {
 
 // MARK: - Patch
 struct Patch: Decodable {
-    let large: String?
+    let small: String?
 }
