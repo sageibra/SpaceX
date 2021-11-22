@@ -1,15 +1,17 @@
 # SpaceX
-> Приложение для просмотра информации о запусках компанией SpaceX.
+> __Приложение для просмотра информации о запусках компанией SpaceX.__
 
 - __Источник данных: https://api.spacexdata.com/v4/__
 - [__Черновик карты экранов__](https://www.figma.com/file/1a2vAlwt8glYnxUDIQ89mj/Untitled?node-id=0%3A1)
-> Архитектура проекта Surf MVP - [__link__](https://github.com/surfstudio/Surf-iOS-Developers/blob/master/architectures/Surf_MVP.md)
+> Архитектура проекта Surf MVP - [link](https://github.com/surfstudio/Surf-iOS-Developers/blob/master/architectures/Surf_MVP.md)
 
 > CoreData для кэширования данных
 
 > UserDefaults для сохранения настроеек
 
 > URLSession для работы с сетью
+
+> Generamba для генерации файлов [link](https://github.com/strongself/Generamba)
 
 #### **Модели данных:**
 
