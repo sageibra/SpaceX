@@ -7,12 +7,17 @@
 
 import UIKit
 
+protocol EndpointProtocol {
+    static func launches() -> Endpoint
+    var url: URL? { get }
+}
+
 struct Endpoint {
     let path: String
     let queryItems: [URLQueryItem]
 }
 
-extension Endpoint {
+extension Endpoint: EndpointProtocol {
     static func launches() -> Endpoint {
         return Endpoint(
             path: "/v4/launches",

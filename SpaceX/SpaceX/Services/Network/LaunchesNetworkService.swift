@@ -10,6 +10,7 @@ import UIKit
 
 final class LaunchesNetworkService {
 
+    private var cache = NSCache<NSString, UIImage>()
     private let session = URLSession(configuration: .default)
     private let decoder: JSONDecoder = {
         let decoder = JSONDecoder()
@@ -37,7 +38,7 @@ final class LaunchesNetworkService {
 extension LaunchesNetworkService: LaunchesNetworkServiceProtocol {
     typealias Handler = (Data?, URLResponse?, Error?) -> Void
 
-    func loadLaunches(_ endpoint: Endpoint, completion: @escaping (LoadLaunchesResponse) -> Void) {
+    func loadLaunches(_ endpoint: EndpointProtocol, completion: @escaping (LoadLaunchesResponse) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(NetworkServiceError.incorrectUrl))
             return
@@ -59,12 +60,19 @@ extension LaunchesNetworkService: LaunchesNetworkServiceProtocol {
     }
 
     func loadImage(from url: URL, completion: @escaping (LoadImageResponse) -> Void) {
-        let request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy)
+        let cacheKey = NSString(string: url.absoluteString)
+        if let image = cache.object(forKey: cacheKey) {
+            completion(.success(image))
+            return
+        }
+
+        let request = URLRequest(url: url)
 
         let handler: Handler = { rawData, response, error in
             do {
                 let data = try self.httpResponse(data: rawData, response: response)
                 guard let image = UIImage(data: data) else { return }
+                self.cache.setObject(image, forKey: cacheKey)
                 completion(.success(image))
             } catch {
                 completion(.failure((error as? NetworkServiceError) ?? .decodingError(error)))

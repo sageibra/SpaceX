@@ -11,6 +11,6 @@ typealias LoadLaunchesResponse = Result<[Launch], NetworkServiceError>
 typealias LoadImageResponse = Result<UIImage, NetworkServiceError>
 
 protocol LaunchesNetworkServiceProtocol {
-    func loadLaunches(_ endpoint: Endpoint, completion: @escaping (LoadLaunchesResponse) -> Void)
+    func loadLaunches(_ endpoint: EndpointProtocol, completion: @escaping (LoadLaunchesResponse) -> Void)
     func loadImage(from url: URL, completion: @escaping (LoadImageResponse) -> Void)
 }
