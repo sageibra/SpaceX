@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MOLaunch" representedClassName="MOLaunch" syncable="YES">
+        <attribute name="article" optional="YES" attributeType="String"/>
+        <attribute name="dateLocal" attributeType="String"/>
+        <attribute name="details" optional="YES" attributeType="String"/>
+        <attribute name="launchpad" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="original" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
+        <attribute name="rocket" attributeType="String"/>
+        <attribute name="small" optional="YES" attributeType="String"/>
+        <attribute name="success" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="upcoming" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="wikipedia" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="MOLaunch" positionX="-198.2156982421875" positionY="-126.7056884765625" width="128" height="194"/>
+    </elements>
+</model>
