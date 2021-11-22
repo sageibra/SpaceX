@@ -1,0 +1,27 @@
+### Headers settings
+company: Chetech
+
+### Xcode project settings
+project_name: SpaceX
+xcodeproj_path: SpaceX.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: SpaceX
+
+# The file path for new modules
+project_file_path: /SpaceX
+
+# The Xcode group path to new modules
+project_group_path: /SpaceX
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Catalogs
+catalogs:
+- 'https://github.com/surfstudio/generamba-templates'
+
+### Templates
+templates:
+- {name: surf_mvp_module}
