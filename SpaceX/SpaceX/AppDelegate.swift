@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-
+        container.dataBase.coreDataStack.load()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(
             rootViewController: container.makeRootViewController()
