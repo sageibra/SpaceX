@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 final class LaunchesPresenter {
 
@@ -14,7 +15,8 @@ final class LaunchesPresenter {
     weak var view: LaunchesViewInput?
     var router: LaunchesRouterInput?
     var service: LaunchesNetworkServiceProtocol?
-    var endpoint: Endpoint?
+    var endpoint: EndpointProtocol?
+    var dataBase: DataBaseServiceProtocol?
 
     var model: [Launch] = []
     var unfiltered: [Launch] = []
@@ -22,9 +24,12 @@ final class LaunchesPresenter {
 
 // MARK: - LaunchesModuleInput
 extension LaunchesPresenter: LaunchesModuleInput {
-    func configure(with service: LaunchesNetworkServiceProtocol, and endpoint: Endpoint) {
+    func configure(with service: LaunchesNetworkServiceProtocol,
+                   and endpoint: EndpointProtocol,
+                   and dataBase: DataBaseServiceProtocol) {
         self.service = service
         self.endpoint = endpoint
+        self.dataBase = dataBase
     }
 }
 
@@ -36,6 +41,8 @@ extension LaunchesPresenter: LaunchesViewOutput {
     func viewLoaded() {
         view?.setupCollectionView()
         view?.setupSegmentedControl()
+        view?.setupActivityIndicator()
+        view?.activityToggle.toggle()
         loadLaunches()
     }
 
@@ -49,28 +56,34 @@ extension LaunchesPresenter: LaunchesViewOutput {
                     self.model = launches
                     self.unfiltered = launches
                     self.view?.reload()
-                case .failure(let error):
-                    print(error)
+                    self.view?.activityToggle.toggle()
+                    self.dataBase?.update(launches: launches)
+                case .failure:
+                    self.model = self.dataBase?.launches() ?? []
+                    self.unfiltered = self.model
+                    self.view?.activityToggle.toggle()
+                    self.view?.reload()
+                    self.view?.setupAlertView(with: "Something went wrong",
+                                              and: "Please check your internet connection, to receive relevant data!")
                 }
             }
         }
     }
 
-    func loadImage(with string: String?) -> UIImage {
-        guard let urlString = string, let url = URL(string: urlString) else { return Images.placeholderPatch }
-        var image = Images.placeholderPatch
+    func loadImage(with string: String?, completion: @escaping (UIImage) -> Void) {
+        guard let urlString = string, let url = URL(string: urlString) else {
+            completion(Images.placeholderPatch)
+            return
+        }
 
         service?.loadImage(from: url) { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let responseImage):
-                    image = responseImage
-                case .failure(let error):
-                    print(error)
-                }
+            switch result {
+            case .success(let responseImage):
+                completion(responseImage)
+            case .failure:
+                completion(Images.placeholderPatch)
             }
         }
-        return image
     }
 
     func segmentSelected(at index: Int) {
@@ -96,7 +109,9 @@ extension LaunchesPresenter {
             launchResult: launch.success ?? false
         )
 
-        cell.configure(with: loadImage(with: launch.links.patch.small))
+        loadImage(with: launch.links.patch.small) { image in
+            DispatchQueue.main.async { cell.configure(with: image) }
+        }
     }
 }
 

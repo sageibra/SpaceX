@@ -7,5 +7,7 @@
 //
 
 protocol LaunchesModuleInput: AnyObject {
-    func configure(with service: LaunchesNetworkServiceProtocol, and endpoint: Endpoint)
+    func configure(with service: LaunchesNetworkServiceProtocol,
+                   and endpoint: EndpointProtocol,
+                   and dataBase: DataBaseServiceProtocol)
 }

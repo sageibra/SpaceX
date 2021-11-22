@@ -36,6 +36,11 @@ final class LaunchCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        missionPatch.image = nil
+    }
+
     func setupViews() {
         backgroundColor = .secondarySystemGroupedBackground
         layer.cornerRadius = 10

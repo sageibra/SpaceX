@@ -13,6 +13,12 @@ final class LaunchesViewController: UIViewController, ModuleTransitionable {
     // MARK: - Outlets
     private var collectionView: UICollectionView!
     private let segmentedControl = UISegmentedControl(items: ["All", "Upcoming"])
+    private lazy var activityIndicatorView = UIActivityIndicatorView(style: .large)
+    private lazy var alertView = AlertView()
+    var activityToggle: Bool = false {
+        didSet { activityToggle ? activityIndicatorView.startAnimating() : activityIndicatorView.stopAnimating() }
+    }
+
     var output: LaunchesViewOutput?
 
     override func viewDidLoad() {
@@ -23,6 +29,17 @@ final class LaunchesViewController: UIViewController, ModuleTransitionable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tabBarController?.title = "Launches"
+    }
+
+    func setupActivityIndicator() {
+        activityIndicatorView.hidesWhenStopped = true
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicatorView)
+
+        NSLayoutConstraint.activate([
+            activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
 
     func setupCollectionView() {
@@ -52,6 +69,14 @@ final class LaunchesViewController: UIViewController, ModuleTransitionable {
             segmentedControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             segmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+
+    func setupAlertView(with title: String, and message: String) {
+        alertView.titleLabel.text = title
+        alertView.messageLabel.text = message
+        alertView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(alertView)
+        alertView.fillSuperview()
     }
 }
 

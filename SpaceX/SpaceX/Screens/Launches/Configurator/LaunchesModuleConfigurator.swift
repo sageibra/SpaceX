@@ -11,11 +11,13 @@ import UIKit
 final class LaunchesModuleConfigurator {
 
     // MARK: - Internal methods
-    func configure(service: LaunchesNetworkServiceProtocol, endpoint: Endpoint) -> LaunchesViewController {
+    func configure(with service: LaunchesNetworkServiceProtocol,
+                   and endpoint: EndpointProtocol,
+                   and dataBase: DataBaseServiceProtocol) -> LaunchesViewController {
         let view = LaunchesViewController()
         view.tabBarItem = UITabBarItem(title: "Launches", image: Images.launchesIcon, tag: 0)
         let presenter = LaunchesPresenter()
-        presenter.configure(with: service, and: endpoint)
+        presenter.configure(with: service, and: endpoint, and: dataBase)
         let router = LaunchesRouter()
 
         presenter.view = view

@@ -9,12 +9,15 @@
 import UIKit
 
 protocol LaunchesViewInput: AnyObject {
+    var activityToggle: Bool { get set }
     func setupCollectionView()
     func setupSegmentedControl()
+    func setupActivityIndicator()
+    func setupAlertView(with title: String, and message: String)
     func reload()
 }
 
-protocol LaunchCellViewInput: AnyObject {
+protocol LaunchCellViewInput {
     func configure(with launch: Launch, date: String, location: String, rocket: String, launchResult: Bool)
     func configure(with image: UIImage)
 }
