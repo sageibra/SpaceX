@@ -366,14 +366,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1234B2AF2750F279003FEC6C /* DTO's */ = {
+			isa = PBXGroup;
+			children = (
+				12739221273049D700899E1F /* Launchpad.swift */,
+				124D93EA272B297F00DC2203 /* Rocket.swift */,
+				124D93E8272B28CA00DC2203 /* Launch.swift */,
+			);
+			path = "DTO's";
+			sourceTree = "<group>";
+		};
 		124D93E7272B28A700DC2203 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1234B2AF2750F279003FEC6C /* DTO's */,
 				125D8E962748300100342061 /* MOLaunch+CoreDataClass.swift */,
 				125D8E972748300100342061 /* MOLaunch+CoreDataProperties.swift */,
-				124D93E8272B28CA00DC2203 /* Launch.swift */,
-				124D93EA272B297F00DC2203 /* Rocket.swift */,
-				12739221273049D700899E1F /* Launchpad.swift */,
 				125D8E5A2748118600342061 /* SpaceX.xcdatamodeld */,
 			);
 			path = Model;

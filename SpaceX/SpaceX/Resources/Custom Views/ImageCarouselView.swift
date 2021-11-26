@@ -45,8 +45,8 @@ final class ImageCarouselView: UIView {
         imagesStack.spacing = 20
         imagesStack.distribution = .fillEqually
 
-        pageControl.currentPageIndicatorTintColor = .black
-        pageControl.pageIndicatorTintColor = .systemRed
+        pageControl.currentPageIndicatorTintColor = .white
+        pageControl.pageIndicatorTintColor = .systemGray
 
         [pageControl, scrollView, imagesStack].forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
         addSubview(scrollView)
