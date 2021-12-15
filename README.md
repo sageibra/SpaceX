@@ -1,55 +1,31 @@
 # SpaceX
-> __Приложение для просмотра информации о запусках компанией SpaceX.__
+> __Application for viewing information about SpaceX launches.__
 
-- __Источник данных: https://api.spacexdata.com/v4/__
-- [__Черновик карты экранов__](https://www.figma.com/file/1a2vAlwt8glYnxUDIQ89mj/Untitled?node-id=0%3A1)
-> Архитектура проекта Surf MVP - [link](https://github.com/surfstudio/Surf-iOS-Developers/blob/master/architectures/Surf_MVP.md)
+#### Preview
 
-> CoreData для кэширования данных
+<table border=0>
+    <tr>
+        <td>
+            <image src=https://github.com/sageibra/SpaceX/blob/master/preview/screencast.gif width=230 align=center>
+        </td>
+    </tr>
+</table>
 
-> UserDefaults для сохранения настроеек
+|Architecture|Description|
+|-|-|
+|[SurfMVP](https://github.com/surfstudio/Surf-iOS-Developers/blob/master/architectures/Surf_MVP.md)|SurfMVP is an architecture built on the classic MVP (Model View Presenter) with some changes.|
 
-> URLSession для работы с сетью
+||Dependency|Description|
+|-|-|-|
+|1|[SwiftLint](https://github.com/realm/SwiftLint)|A tool to enforce Swift style and conventions.|
+|2|[Generamba](https://github.com/strongself/Generamba)|Generamba is a code generator made for working with Xcode.|
 
-> Generamba для генерации файлов [link](https://github.com/strongself/Generamba)
+#### Getting Started
+1. Clone this repo: ``` git clone https://github.com/sageibra/SpaceX ```
+2. Install dependencies: ``` pod install ```
+3. Open project
 
-#### **Модели данных:**
-
-| Rocket |  |
-| ------ | ------ |
-| active | Bool |
-| costPerLaunch | Int |
-| successRatePct | Int |
-| country | String |
-| company | String |
-| flickrImages | [String] |
-| wikipedia | String |
-| rocketDescription | String |
-| rocketName | String |
-| rocketType | String |
-
-| Launch |  | 
-| ------ | ------ |
-| missionName | String |
-| launchDateUnix | Date |
-| rocket | RocketInfo |
-| launchSite | LaunchSite |
-| launchSuccess | Bool? |
-| links | Link |
-| details | String |
-| flightNumber | Int |
-
-| LaunchSite |  |
-| ------ | ------ |
-| siteNameLong | String |
-
-| Link |  |
-| ------ | ------ |
-| missionPatch | String? |
-| articleLink | String? |
-| videoLink | String? |
-
-| RocketInfo |  |
-| ------ | ------ |
-| rocketName | String |
-| rocketType | String |
+> Requirements
+- macOS 10.15 Big Sur or higher
+- Xcode 12.x or higher (Swift 5.0)
+- CocoaPods [link](https://cocoapods.org/)
