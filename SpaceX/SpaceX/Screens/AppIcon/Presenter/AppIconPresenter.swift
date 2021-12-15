@@ -47,7 +47,7 @@ extension AppIconPresenter: AppIconViewOutput {
 
     func currentIconIndex() -> Int {
         if let iconName = application?.alternateIconName {
-            guard let icon = AppIcon.allCases.first(where: { $0.name == iconName }) else { return 0}
+            guard let icon = AppIcon.allCases.first(where: { $0.name == iconName }) else { return 0 }
             return icon.rawValue
         }
 
