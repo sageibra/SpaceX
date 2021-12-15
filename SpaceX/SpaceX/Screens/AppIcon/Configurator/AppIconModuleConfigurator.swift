@@ -11,10 +11,10 @@ import UIKit
 final class AppIconModuleConfigurator {
 
     // MARK: - Internal methods
-    func configure() -> AppIconViewController {
+    func configure(with application: UIApplication) -> AppIconViewController {
         let view = AppIconViewController()
         let presenter = AppIconPresenter()
-        presenter.configure(with: UIApplication.shared)
+        presenter.configure(with: application)
         presenter.view = view
         view.output = presenter
 

@@ -6,10 +6,10 @@
 //  Copyright © 2021 Chetech. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol SettingsRouterInput {
-    func presentAppIconModule()
-    func presentThemeModule()
+    func presentAppIconModule(with application: UIApplication)
+    func presentThemeModule(with userDefaults: UserDefaults, and application: UIApplication)
     func presentSafariModule(with url: URL)
 }

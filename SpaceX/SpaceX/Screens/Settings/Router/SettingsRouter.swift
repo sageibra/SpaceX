@@ -14,15 +14,15 @@ final class SettingsRouter: SettingsRouterInput {
     weak var view: ModuleTransitionable?
 
     // MARK: - SettingsRouterInput
-    func presentAppIconModule() {
+    func presentAppIconModule(with application: UIApplication) {
         let config = AppIconModuleConfigurator()
-        let module = config.configure()
+        let module = config.configure(with: application)
         view?.pushModule(module: module, animation: true)
     }
 
-    func presentThemeModule() {
+    func presentThemeModule(with userDefaults: UserDefaults, and application: UIApplication) {
         let config = ThemeModuleConfigurator()
-        let module = config.configure()
+        let module = config.configure(with: userDefaults, and: application)
         view?.pushModule(module: module, animation: true)
     }
 

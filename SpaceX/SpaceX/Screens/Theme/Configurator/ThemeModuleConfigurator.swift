@@ -11,14 +11,13 @@ import UIKit
 final class ThemeModuleConfigurator {
 
     // MARK: - Internal methods
-    func configure() -> ThemeViewController {
+    func configure(with userDefaults: UserDefaults, and application: UIApplication) -> ThemeViewController {
         let view = ThemeViewController()
         let presenter = ThemePresenter()
-        presenter.configure(with: UserDefaults.standard, and: UIApplication.shared)
+        presenter.configure(with: userDefaults, and: application)
         presenter.view = view
         view.output = presenter
 
         return view
     }
-
 }
