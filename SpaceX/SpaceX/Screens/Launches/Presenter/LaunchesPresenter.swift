@@ -24,12 +24,10 @@ final class LaunchesPresenter {
 
 // MARK: - LaunchesModuleInput
 extension LaunchesPresenter: LaunchesModuleInput {
-    func configure(with service: LaunchesNetworkServiceProtocol,
-                   and endpoint: EndpointProtocol,
-                   and dataBase: DataBaseServiceProtocol) {
-        self.service = service
-        self.endpoint = endpoint
-        self.dataBase = dataBase
+    func configure(with diContainer: DependencyContainer) {
+        self.service = diContainer.networkService
+        self.endpoint = diContainer.endpoint
+        self.dataBase = diContainer.dataBase
     }
 }
 

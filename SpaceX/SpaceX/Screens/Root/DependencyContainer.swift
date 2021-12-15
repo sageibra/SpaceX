@@ -9,21 +9,32 @@ import Foundation
 import UIKit
 
 final class DependencyContainer {
-    private lazy var networkService = LaunchesNetworkService()
-    private lazy var endpoint = Endpoint.launches()
-    private lazy var coreDataStack = CoreDataStack(modelName: "SpaceX")
+    lazy var networkService = LaunchesNetworkService()
+    lazy var endpoint = Endpoint.launches()
+    lazy var coreDataStack = CoreDataStack(modelName: "SpaceX")
     lazy var userDefaults = UserDefaults.standard
+    lazy var application = UIApplication.shared
     lazy var dataBase = DataBaseService(coreDataStack: coreDataStack)
 }
 
-extension DependencyContainer: RootViewControllerFactory {
+extension DependencyContainer: ViewControllerFactory {
     func makeRootViewController() -> UIViewController {
         let rootTabBarController = UITabBarController()
-        let launchesConfig = LaunchesModuleConfigurator()
-        let launchesModule = launchesConfig.configure(with: networkService, and: endpoint, and: dataBase)
-        let settingsConfig = SettingsModuleConfigurator()
-        let settingsModule = settingsConfig.configure()
-        rootTabBarController.viewControllers = [launchesModule, settingsModule]
+        rootTabBarController.viewControllers = [makeLaunchesViewController(), makeSettingsViewController()]
         return rootTabBarController
+    }
+
+    func makeLaunchesViewController() -> UIViewController {
+        let launchesConfigurator = LaunchesModuleConfigurator()
+        let launchesModule = launchesConfigurator.configure(with: self)
+        launchesModule.tabBarItem = UITabBarItem(title: "Launches", image: Images.launchesIcon, tag: 0)
+        return launchesModule
+    }
+
+    func makeSettingsViewController() -> UIViewController {
+        let settingsConfigurator = SettingsModuleConfigurator()
+        let settingsModule = settingsConfigurator.configure(with: self)
+        settingsModule.tabBarItem = UITabBarItem(title: "Settings", image: Images.settingsIcon, tag: 1)
+        return settingsModule
     }
 }

@@ -11,10 +11,10 @@ import UIKit
 final class SettingsModuleConfigurator {
 
     // MARK: - Internal methods
-    func configure() -> SettingsViewController {
+    func configure(with diContainer: DependencyContainer) -> SettingsViewController {
         let view = SettingsViewController()
-        view.tabBarItem = UITabBarItem(title: "Settings", image: Images.settingsIcon, tag: 1)
         let presenter = SettingsPresenter()
+        presenter.configure(with: diContainer)
         let router = SettingsRouter()
 
         presenter.view = view

@@ -17,6 +17,16 @@ final class SettingsPresenter {
 
     weak var view: SettingsViewInput?
     var router: SettingsRouterInput?
+    var application: UIApplication?
+    var userDefaults: UserDefaults?
+}
+
+// MARK: - SettingsModuleInput
+extension SettingsPresenter: SettingsModuleInput {
+    func configure(with diContainer: DependencyContainer) {
+        self.application = diContainer.application
+        self.userDefaults = diContainer.userDefaults
+    }
 }
 
 // MARK: - SettingsViewOutput
@@ -48,8 +58,8 @@ extension SettingsPresenter {
         case .main:
             let main = MainSectionRows.allCases[row]
             switch main {
-            case .theme: router?.presentThemeModule()
-            case .appIcon: router?.presentAppIconModule()
+            case .theme: router?.presentThemeModule(with: userDefaults ?? .standard, and: application ?? .shared)
+            case .appIcon: router?.presentAppIconModule(with: application ?? .shared)
             }
 
         case .links:
